@@ -4633,3 +4633,8 @@ main {
     margin-bottom: 20px;
   }
 }
+
+.tet h2 {
+  padding-top: 7px;
+  height: fit-content;
+}

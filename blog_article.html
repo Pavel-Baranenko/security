@@ -78,27 +78,25 @@
                             <li class="menu-navigation__item"><a href="./blogs.html" class="menu-navigation__item__link"
                                     title="Блоги">Блоги</a></li>
                             <li class="menu-navigation__item">
-                                <a href="#" class="menu-navigation__item__link" data-action="open-submenu" data-submenu="glossary"
-                                    title="Глосарий"><span>Глосарий</span></a>
-                                    <ul class="menu-navigation__submenu" data-name="glossary">
-                                        <li class="menu-navigation__item">
-                                            <a href="#"
-                                                class="menu-navigation__item__link"
-                                                title="Терминология">Терминология</a>
-                                        </li>
-                                        <li class="menu-navigation__item">
-                                            <a href="#"
-                                                class="menu-navigation__item__link"
-                                                title="Хакерские группировки">Хакерские группировки</a>
-                                        </li>
-                                        <li class="menu-navigation__item">
-                                            <a href="#"
-                                                class="menu-navigation__item__link" title="Каталог софта"><span>Каталог
-                                                    софта</span>
-                                            </a>
+                                <a href="#" class="menu-navigation__item__link" data-action="open-submenu"
+                                    data-submenu="glossary" title="Глосарий"><span>Глосарий</span></a>
+                                <ul class="menu-navigation__submenu" data-name="glossary">
+                                    <li class="menu-navigation__item">
+                                        <a href="#" class="menu-navigation__item__link"
+                                            title="Терминология">Терминология</a>
+                                    </li>
+                                    <li class="menu-navigation__item">
+                                        <a href="#" class="menu-navigation__item__link"
+                                            title="Хакерские группировки">Хакерские группировки</a>
+                                    </li>
+                                    <li class="menu-navigation__item">
+                                        <a href="#" class="menu-navigation__item__link"
+                                            title="Каталог софта"><span>Каталог
+                                                софта</span>
+                                        </a>
 
-                                        </li>
-                                    </ul>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </nav>
@@ -213,7 +211,7 @@
                                             <div class="bloger__name">Юрий_Кочетов</div>
                                             <div class="bloger__info">Просто хакер</div>
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -266,34 +264,38 @@
                                 </div>
                                 <div class="article__code">
                                     <code>
-                                        var url = "https://10.0.0.1/index.html"; 
-                                        var xhr = new XMLHttpRequest; 
-                                        
-                                        // Expand URL to ~4kB using a query string 
-                                        // Alternatively, force a large cookie 
-                                        url += "?"; 
-                                        var x = 10000000; 
-                                        for (var i=0; i&lt;=500; i++) { 
-                                            url += x++; 
-                                        } 
-                                        
-                                        while(true) { 
-                                            xhr.open("HEAD", url, false); 
-                                            xhr.withCredentials = true; 
-                                            xhr.send(); 
-                                            xhr.abort(); 
+                                      <p>
+                                        var url = &laquo;https://10.0.0.1/index.html&raquo;;<br>
+                  var xhr = new XMLHttpRequest;
+                                      </p>
+                                      <p>
+                                        // Expand URL to ~4kB using a&nbsp;query string<br>
+                                        // Alternatively, force a&nbsp;large cookie<br>
+                                        url += &laquo;?&raquo;;<br>
+                                        var x = 10000000;<br>
+                                        for (var i=0; i&lt;=500; i++) {<br>
+                                        url += x++;<br>
+                                        }<br>
+                                      </p>
+                                      <p>
+                                        while(true) {<br>
+                                          xhr.open(&quot;HEAD&quot;, url, false);<br>
+                                          xhr.withCredentials = true;<br>
+                                          xhr.send();<br>
+                                          xhr.abort();<br>
                                         }
-                                    </code>
-                                  </div>
+                                      </p>
+                                      </code>
+                                </div>
                                 <div class="article__subtitle">
                                     <h2>Исследователь кибербезопасности</h2>
                                 </div>
-                                <div class="article-body__image">
+                                <div class="article-body__image new__img">
                                     <picture>
-                                      <img src="./image/article/4.jpg" alt="SecurityLab">
+                                        <img src="./image/article/4.jpg" alt="SecurityLab">
                                     </picture>
                                     <div class="article-body__image-figcap">
-                                      <p>© Константин Константинопольский, ТАСС</p>
+                                        <p>© Константин Константинопольский, ТАСС</p>
                                     </div>
                                 </div>
                                 <div class="article__text">
@@ -322,8 +324,8 @@
                                 </div>
                                 <!-- Цитата-->
                                 <div class="article__quote">
-                                    <blockquote class="blockquote">
-                                        <div class="blockquote__text">
+                                    <blockquote class="blockquote qauhtor">
+                                        <div class="blockquote__text qt">
                                             <p>В Китае сегодня все чаще и чаще искусственный интеллект применяется для
                                                 слежки за людьми, создания социального рейтинга граждан, рейтинга
                                                 благонадежности. Но анализ активности головного мозга – это уже,
@@ -333,8 +335,8 @@
                                                 сотрудник, близок ли к депрессии, теряет ли&nbsp;концентрацию, в стрессе
                                                 ли он, схватит ли&nbsp;топор и&nbsp;начнет лупить коллег…</p>
                                         </div>
-                                        <div class="blockquote__author">Владимир Безмалый</div>
-                                        <div class="blockquote__position">Исследователь кибербезопасности</div>
+                                        <div class="blockquote__author qname">Владимир Безмалый</div>
+                                        <div class="blockquote__position qadd">Исследователь кибербезопасности</div>
                                     </blockquote>
                                 </div>
                             </div>

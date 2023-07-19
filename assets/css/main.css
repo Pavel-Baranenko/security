@@ -4213,7 +4213,7 @@ main {
   line-height: 145.455%;
 }
 
-.article__quote-text p {
+.qt p {
   color: #0089B5;
   font-family: Arimo;
   font-size: 28px;
@@ -4224,12 +4224,15 @@ main {
   letter-spacing: -1.4px;
 }
 
+.qauhtor,
 .article__quote-author {
-  text-align: right;
+
   max-width: 700px;
 }
 
+.qname,
 .quote__author-name {
+  text-align: right;
   margin-top: 16px;
   color: #0089B5;
   font-family: Fira Code;
@@ -4240,7 +4243,9 @@ main {
   letter-spacing: -1px;
 }
 
+.qadd,
 .quote__author-add {
+  text-align: right;
   color: #0089B5;
   font-family: Fira Code;
   font-size: 20px;
@@ -4437,7 +4442,7 @@ main {
 .blue-btn {
   display: inline-block;
   text-align: center;
-  width: 1005px;
+  width: 100%;
   color: #FBFEFF;
   font-family: Fira Code;
   font-size: 13px;
@@ -4446,5 +4451,159 @@ main {
   line-height: 1;
   letter-spacing: -0.65px;
   padding: 10px;
-  background-color: #fff;
+  border-radius: 2px;
+  background: var(--text-active-blue, #00AEE5);
 }
+
+.tet span {
+  font-size: 36px;
+}
+
+.tet h2 {
+  display: inline-block;
+  height: max-content;
+}
+
+.themes-news {
+  padding-top: 45px;
+}
+
+.glos-news {
+  display: flex;
+}
+
+.net span {
+  color: #FFF;
+
+  /* h4 */
+  font-family: Fira Code;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  /* 112.5% */
+  text-transform: uppercase;
+  padding: 1px;
+}
+
+.net h2 {
+  display: inline-block;
+  height: max-content;
+  border-radius: 2px;
+  background: #00AEE5;
+  margin-bottom: 18px;
+}
+
+.gloapp {
+  max-width: 860px;
+}
+
+.terms__box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 40px;
+  padding-top: 33px;
+}
+
+.term__name {
+  color: var(--text-darkest, #0B1823);
+  font-family: Arimo;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 126.316%;
+  margin-bottom: 8px;
+}
+
+.term__info {
+  color: var(--text-secondary-on-white, rgba(11, 24, 35, 0.50));
+  font-family: Fira Code;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 1.2;
+  letter-spacing: -0.3px;
+}
+
+.terms__box-item {
+  cursor: pointer;
+  border-bottom: 1px solid #00AEE5;
+  padding-bottom: 26px;
+}
+
+.terms__inner {
+  margin-top: 45px;
+}
+
+.terms__inner .terms__box {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .terms__box {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+  }
+
+  .terms__box-item {
+    padding-bottom: 16px;
+  }
+}
+
+.themes__top {
+  width: 100% !important;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 174, 229, 0.30);
+  background: #FFF;
+  box-shadow: 8px 8px 0px 0px rgba(0, 137, 181, 0.16);
+}
+
+.container-fluid {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+}
+
+.themes__top-img img {
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 20px;
+}
+
+.themes__top {
+  text-align: center;
+}
+
+.themes__top-title {
+  text-align: center;
+  color: #FFF;
+  text-align: center;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Fira Code;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -2.5px;
+  display: inline;
+  background-color: #000;
+  padding: 3px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.themes__top-subtitle {
+  color: #0089B5;
+  font-family: Fira Code;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.65px;
+  margin: 15px 0 16px 0;
+}
+
+.blog-header .container.border-none {
+  border-bottom: none;
+}
+
+@media screen and (max-width: 1280px) {}

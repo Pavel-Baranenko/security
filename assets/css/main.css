@@ -4433,3 +4433,18 @@ main {
     gap: 16px 0px;
   }
 }
+
+.blue-btn {
+  display: inline-block;
+  text-align: center;
+  width: 1005px;
+  color: #FBFEFF;
+  font-family: Fira Code;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.65px;
+  padding: 10px;
+  background-color: #fff;
+}

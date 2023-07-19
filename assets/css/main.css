@@ -3862,7 +3862,7 @@ main {
 
 .gloapp__name {
   transform: translateY(-36px);
-  width: 440px;
+  max-width: 440px;
   background: #cceffa;
   color: #0B1823;
   font-size: 36px;
@@ -4468,9 +4468,6 @@ main {
   padding-top: 45px;
 }
 
-.glos-news {
-  display: flex;
-}
 
 .net span {
   color: #FFF;
@@ -4638,4 +4635,127 @@ main {
 .tet h2 {
   padding-top: 7px;
   height: fit-content;
+}
+
+.dte {
+  color: #00AEE5;
+  text-align: right;
+
+  /* mastheads */
+  font-family: Fira Code;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 13px;
+  /* 100% */
+  letter-spacing: -0.65px;
+  margin-right: 10px;
+}
+
+.glos-news-head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.glos-news-head .main-news-list__rubric {
+  color: #00AEE5;
+  text-align: right;
+
+  /* mastheads */
+  font-family: Fira Code;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 13px;
+  /* 100% */
+  letter-spacing: -0.65px;
+  padding-left: 10px;
+  border-left: 1px solid #00AEE5;
+}
+
+.glos-news h4 {
+  color: #0B1823;
+  font-family: Arimo;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+
+  margin-bottom: 16px;
+}
+
+.glos-news {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  grid-auto-rows: 1fr;
+  margin-bottom: 16px;
+}
+
+.glos-news .main-news-list__item {
+  border-bottom: 1px solid rgba(0, 174, 229, 0.30);
+}
+
+@media (max-width: 1280px) {
+  .overx {
+    overflow-x: auto;
+    width: auto;
+  }
+
+  .glos-news {
+    overflow-x: auto;
+    display: flex;
+    width: max-content;
+  }
+
+  .overx::-webkit-scrollbar {
+    display: none;
+  }
+
+  .glos-news::-webkit-scrollbar {
+    display: none;
+  }
+
+  .glos-news .main-news-list__item {
+    width: 280px;
+    border-bottom: none;
+  }
+
+  .gloapp__link {
+    top: auto;
+    bottom: -25px;
+  }
+
+  .border-dest {
+    padding: 9px 0 9px 10px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 174, 229, 0.30);
+  }
+
+  .mob-none {
+    display: none;
+  }
+
+  .glos-news h4 {
+    font-size: 17px;
+  }
+
+  .glos-news-head {
+    margin-bottom: 8px;
+  }
+
+  .glos-news {
+    margin-bottom: 0;
+  }
+
+  .mbn {
+    margin-bottom: 120px;
+  }
+}
+
+@media (max-width:767px) {
+  .mbn {
+    margin-bottom: 59px;
+  }
 }

@@ -4261,9 +4261,13 @@ main {
   align-items: flex-start;
   width: 100%;
 
+
 }
 
 .article__code-item-left {
-  flex: 0 1 13.3%;
-  margin-right: 37px;
+  flex: 0 1 120px;
+}
+
+.article__code-item-right {
+  flex: 1;
 }

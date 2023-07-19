@@ -4606,4 +4606,30 @@ main {
   border-bottom: none;
 }
 
-@media screen and (max-width: 1280px) {}
+@media screen and (max-width: 1280px) {
+  .themes__top-title {
+    font-size: 41px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .themes__top-title {
+    font-size: 33px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .themes__top-title {
+    font-size: 30px;
+  }
+
+  .container-fluid {
+    padding: 0 1rem;
+  }
+
+  .themes__top {
+    box-shadow: none;
+    border: none;
+    margin-bottom: 20px;
+  }
+}

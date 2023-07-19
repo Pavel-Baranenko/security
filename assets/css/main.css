@@ -2929,8 +2929,8 @@ footer .container .footer-menu__item a {
   }
 
   #main-blogs .container .main-blogs__image img {
-    height: 232px;
-    width: 600px;
+    height: 240px;
+    width: 613px;
   }
 
   #main-blogs .container .main-blogs__title h2 {
@@ -4758,4 +4758,29 @@ main {
   .mbn {
     margin-bottom: 59px;
   }
+}
+
+.article__list-title p {
+  color: #0B1823;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  /* 155.556% */
+  letter-spacing: -0.5px;
+}
+
+.article__list-ul p {
+  color: #0B1823;
+  font-family: Inter !important;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+}
+
+.article__list {
+  margin-bottom: 20px;
 }

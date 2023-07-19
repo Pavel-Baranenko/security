@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SecurityLab</title>
+    <!-- meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="theme-color" content="#ffffff">
+    <!-- icon & css-->
+    <link rel="icon" href="./image/favicon.ico" sizes="any">
+    <link rel="icon" href="./image/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./image/apple-touch-icon.png">
+    <link rel="manifest" href="./manifest.json">
+    <link href="./assets/css/vendors.css" rel="stylesheet">
+    <link href="./assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <div class="container">
+                <div class="header content">
+                    <div class="header-ascii">
+                        <div class="header-ascii__art"></div>
+                        <div class="header-ascii__lead">новости кибербезопасности</div>
+                    </div>
+                    <div class="header__block">
+                        <div class="header-logo"><a href="./" title="SecurityLab">
+                                <svg>
+                                    <use href="./image/logo.svg#logo"></use>
+                                </svg></a></div>
+                        <div class="header__group">
+                            <nav class="header-menu">
+                                <ul>
+                                    <li><a href="./blogs.html" title="Блоги">Блоги</a></li>
+                                    <li><a href="#" title="PHDays">PHDays</a></li>
+                                    <li><a href="#" title="The Standoff">The Standoff</a></li>
+                                </ul>
+                            </nav>
+                            <div class="header-menu-bar"><a href="#" data-action="open-menu" title="Открыть меню">
+                                    <svg>
+                                        <use href="./image/icon/menu.svg#menu"></use>
+                                    </svg></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Menu-->
+        <div class="menu">
+            <div class="menu-overlay" data-action="close-menu"></div>
+            <div class="menu__container">
+                <div class="menu__head">
+                    <div class="menu__link menu__link--close"><a href="#" data-action="close-menu" title="Закрыть меню">
+                            <svg>
+                                <use href="./image/icon/close.svg#close"></use>
+                            </svg></a></div>
+                    <div class="menu__link menu__link--back"><a href="#" data-action="close-submenu" title="Назад">
+                            <svg>
+                                <use href="./image/icon/back.svg#back"></use>
+                            </svg></a></div>
+                </div>
+                <div class="menu__main">
+                    <nav class="menu-navigation">
+                        <ul class="menu-navigation__list">
+                            <li class="menu-navigation__item"><a href="#" class="menu-navigation__item__link"
+                                    title="Новости">Новости</a></li>
+                            <li class="menu-navigation__item"><a href="#" class="menu-navigation__item__link"
+                                    title="Статьи">Статьи</a></li>
+                            <li class="menu-navigation__item"><a href="#" class="menu-navigation__item__link"
+                                    title="Уязвимости">Уязвимости</a></li>
+                            <li class="menu-navigation__item"><a href="./blogs.html" class="menu-navigation__item__link"
+                                    title="Блоги">Блоги</a></li>
+                            <li class="menu-navigation__item">
+                                <a href="#" class="menu-navigation__item__link" data-action="open-submenu" data-submenu="glossary"
+                                    title="Глосарий"><span>Глосарий</span></a>
+                                    <ul class="menu-navigation__submenu" data-name="glossary">
+                                        <li class="menu-navigation__item">
+                                            <a href="#"
+                                                class="menu-navigation__item__link"
+                                                title="Терминология">Терминология</a>
+                                        </li>
+                                        <li class="menu-navigation__item">
+                                            <a href="#"
+                                                class="menu-navigation__item__link"
+                                                title="Хакерские группировки">Хакерские группировки</a>
+                                        </li>
+                                        <li class="menu-navigation__item">
+                                            <a href="#"
+                                                class="menu-navigation__item__link" title="Каталог софта"><span>Каталог
+                                                    софта</span>
+                                            </a>
+
+                                        </li>
+                                    </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="menu-info">
+                        <li class="menu-info__item"><a href="#" title="Контакты">Контакты</a></li>
+                        <li class="menu-info__item"><a href="#" title="Реклама">Реклама</a></li>
+                        <li class="menu-info__item"><a href="#" title="Экспорт статей">Экспорт статей</a></li>
+                        <li class="menu-info__item"><a href="#" title="Карта сайта">Карта сайта</a></li>
+                    </ul>
+                    <ul class="menu-social">
+                        <li class="menu-social__item"><a href="tg://resolve?domain=SecLabNews" target="_blank"
+                                title="Телеграм">
+                                <svg>
+                                    <use href="./image/icon/telegram.svg#telegram"></use>
+                                </svg></a></li>
+                        <li class="menu-social__item"><a href=".//twitter.com/SecurityLabnews" target="_blank"
+                                title="Твиттер">
+                                <svg>
+                                    <use href="./image/icon/twitter.svg#twitter"></use>
+                                </svg></a></li>
+                        <li class="menu-social__item"><a href=".//vk.com/public47494392" target="_blank"
+                                title="ВКонтакте">
+                                <svg>
+                                    <use href="./image/icon/vk.svg#vk"></use>
+                                </svg></a></li>
+                        <li class="menu-social__item"><a href="#" title="RSS">
+                                <svg>
+                                    <use href="./image/icon/rss.svg#rss"></use>
+                                </svg></a></li>
+                    </ul>
+                </div>
+                <div class="menu-search">
+                    <form class="form menu-search__form" name="menu-search" action="./" autocomplete="off"
+                        accept-charset="utf-8">
+                        <fieldset class="form__line">
+                            <input class="form__input" type="search" name="search" required placeholder="Поиск" value=""
+                                title="Поиск">
+                            <div class="form__button">
+                                <div class="button button--search button--disabled"><a href="#" data-action="form-send"
+                                        title="Найти">Найти</a></div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Menu end-->
+        <main>
+            <section id="main">
+                <div class="container">
+                    <div class="main content">
+                        <div class="main-list">
+                            <article class="main-list__card">
+                                <div class="main-list__head">
+                                    <div class="main-list__title"><a href="./article.html"
+                                            title="Новая Linux-версия программы Royal Ransomware нацелена на виртуальные машины ESXi">
+                                            <h1><span class="animation-decode">Новая Linux-версия программы Royal
+                                                    Ransomware нацелена на виртуальные машины ESXi</span></h1>
+                                        </a></div>
+                                    <div class="main-list__image"><a href="./article.html"
+                                            title="Новая Linux-версия программы Royal Ransomware нацелена на виртуальные машины ESXi"><img
+                                                src="./image/article/1.jpg" srcset="./image/article/1@2x.jpg 2x"
+                                                loading="eager"
+                                                alt="Новая Linux-версия программы Royal Ransomware нацелена на виртуальные машины ESXi"></a>
+                                    </div>
+                                </div>
+                                <div class="main-list__details">
+                                    <time class="main-list__date" datetime="2023-06-30">30 июн, 12:28</time>
+                                    <ul class="main-list-tags">
+                                        <li class="main-list-tags__tag"><a href="#" title="Новости">Новости</a></li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article class="main-list__card">
+                                <div class="main-list__head">
+                                    <div class="main-list__title"><a href="./article-image.html"
+                                            title="Всевидящий китайский ИИ: когда спутники станут оружием для контроля над миром?">
+                                            <h2>Всевидящий китайский ИИ: когда спутники станут оружием для контроля над
+                                                миром?</h2>
+                                        </a></div>
+                                </div>
+                                <div class="main-list__details">
+                                    <time class="main-list__date" datetime="2023-06-30">30 июн, 12:28</time>
+                                </div>
+                            </article>
+                            <article class="main-list__card">
+                                <div class="main-list__head">
+                                    <div class="main-list__title"><a href="./article-small-image.html"
+                                            title="Хакеры укрощают Action1: продукт для удаленного мониторинга превратился в инструмент взлома">
+                                            <h2>Хакеры укрощают Action1: продукт для удаленного мониторинга превратился
+                                                в инструмент взлома</h2>
+                                        </a></div>
+                                </div>
+                                <div class="main-list__details">
+                                    <time class="main-list__date" datetime="2023-06-30">30 июн, 12:28</time>
+                                </div>
+                            </article>
+                            <article class="main-list__card">
+                                <div class="main-list__head">
+                                    <div class="main-list__title"><a href="./article-image.html"
+                                            title="Национальной комиссии по этике в ИИ предстоит отрегулировать использование генеративных моделей в образовательных целях">
+                                            <h2>Национальной комиссии по этике в ИИ предстоит отрегулировать
+                                                использование генеративных моделей в образовательных целях</h2>
+                                        </a></div>
+                                </div>
+                                <div class="main-list__details">
+                                    <time class="main-list__date" datetime="2023-06-30">30 июн, 12:28</time>
+                                </div>
+                            </article>
+                            <article class="main-list__card">
+                                <div class="main-list__head">
+                                    <div class="main-list__title"><a href="./article-small-image.html"
+                                            title="Завершено расследование по делу группировки REvil">
+                                            <h2>Завершено расследование по делу группировки REvil</h2>
+                                        </a></div>
+                                </div>
+                                <div class="main-list__details">
+                                    <time class="main-list__date" datetime="2023-06-30">30 июн, 12:28</time>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="main-news">
+                <div class="container">
+                    <div class="main-news content">
+                        <aside class="main-news__sidebar">
+                            <div class="main-news__banner"><a href="#" target="_blank"
+                                    title="Стань спикером на PHDAYS12"><img src="./image/banner/phdays12.jpg"
+                                        srcset="./image/banner/phdays12@2x.jpg 2x" loading="lazy" alt="PHDAYS12"></a>
+                            </div>
+                            <div class="main-news-top slider">
+                                <div class="main-news-top__title">
+                                    <h2><span>_Топ_за_неделю</span></h2>
+                                </div>
+                                <div class="main-news-top-list swiper-wrapper">
+                                    <article class="main-news-top-list__item swiper-slide">
+                                        <div class="main-news-top-list__count main-news-top-list__count-1"><img
+                                                src="./image/ascii/1.svg" alt="icon"></div>
+                                        <div class="main-news-top-list__head">
+                                            <time class="main-news-top-list__date" datetime="2023-06-30">30 июн,
+                                                12:28</time>
+                                            <div class="main-news-top-list__rubric"><a href="#"
+                                                    title="Киберапокалипсис">Киберапокалипсис</a></div>
+                                        </div>
+                                        <div class="main-news-top-list__title"><a href="./article.html"
+                                                title="Технологии и экспертиза по сетевой безопасности на подъеме">
+                                                <h4>Технологии и экспертиза по сетевой безопасности на подъеме</h4>
+                                            </a></div>
+                                    </article>
+                                    <article class="main-news-top-list__item swiper-slide">
+                                        <div class="main-news-top-list__count main-news-top-list__count-2"><img
+                                                src="./image/ascii/2.svg" alt="icon"></div>
+                                        <div class="main-news-top-list__head">
+                                            <time class="main-news-top-list__date" datetime="2023-06-30">30 июн,
+                                                12:28</time>
+                                            <div class="main-news-top-list__rubric"><a href="#"
+                                                    title="Киберапокалипсис">Киберапокалипсис</a></div>
+                                        </div>
+                                        <div class="main-news-top-list__title"><a href="./article.html"
+                                                title="ChaosGPT — новая нейросеть без моральных и этических ограничений">
+                                                <h4>ChaosGPT — новая нейросеть без моральных и этических ограничений
+                                                </h4>
+                                            </a></div>
+                                    </article>
+                                    <article class="main-news-top-list__item swiper-slide">
+                                        <div class="main-news-top-list__count main-news-top-list__count-3"><img
+                                                src="./image/ascii/3.svg" alt="icon"></div>
+                                        <div class="main-news-top-list__head">
+                                            <time class="main-news-top-list__date" datetime="2023-06-30">30 июн,
+                                                12:28</time>
+                                            <div class="main-news-top-list__rubric"><a href="#"
+                                                    title="Киберапокалипсис">Киберапокалипсис</a></div>
+                                        </div>
+                                        <div class="main-news-top-list__title"><a href="./article.html"
+                                                title="Крупный облачный провайдер подвергся кибератаке из-за ошибки в ядре Linux">
+                                                <h4>Крупный облачный провайдер подвергся кибератаке из-за ошибки в ядре
+                                                    Linux</h4>
+                                            </a></div>
+                                    </article>
+                                    <article class="main-news-top-list__item swiper-slide">
+                                        <div class="main-news-top-list__count main-news-top-list__count-4"><img
+                                                src="./image/ascii/4.svg" alt="icon"></div>
+                                        <div class="main-news-top-list__head">
+                                            <time class="main-news-top-list__date" datetime="2023-06-30">30 июн,
+                                                12:28</time>
+                                            <div class="main-news-top-list__rubric"><a href="#"
+                                                    title="Киберапокалипсис">Киберапокалипсис</a></div>
+                                        </div>
+                                        <div class="main-news-top-list__title"><a href="./article.html"
+                                                title="Цифровые паспорта в России: покупка алкоголя и сигарет с помощью новой технологии">
+                                                <h4>Цифровые паспорта в России: покупка алкоголя и сигарет с помощью
+                                                    новой технологии</h4>
+                                            </a></div>
+                                    </article>
+                                    <article class="main-news-top-list__item swiper-slide">
+                                        <div class="main-news-top-list__count main-news-top-list__count-5"><img
+                                                src="./image/ascii/5.svg" alt="icon"></div>
+                                        <div class="main-news-top-list__head">
+                                            <time class="main-news-top-list__date" datetime="2023-06-30">30 июн,
+                                                12:28</time>
+                                            <div class="main-news-top-list__rubric"><a href="#"
+                                                    title="Киберапокалипсис">Киберапокалипсис</a></div>
+                                        </div>
+                                        <div class="main-news-top-list__title"><a href="./article.html"
+                                                title="Неуправляемый искусственный интеллект приведет к ядерной катастрофе и мировому хаосу">
+                                                <h4>Неуправляемый искусственный интеллект приведет к ядерной катастрофе
+                                                    и мировому хаосу</h4>
+                                            </a></div>
+                                        <div class="main-news-top-list__image"><a href="./article.html"
+                                                title="Неуправляемый искусственный интеллект приведет к ядерной катастрофе и мировому хаосу"><img
+                                                    src="./image/article/2.jpg" srcset="./image/article/2@2x.jpg 2x"
+                                                    loading="lazy"
+                                                    alt="Неуправляемый искусственный интеллект приведет к ядерной катастрофе и мировому хаосу"></a>
+                                        </div>
+                                    </article>
+                                    <article class="main-news-top-list__item swiper-slide">
+                                        <div class="main-news-top-list__count main-news-top-list__count-6"><img
+                                                src="./image/ascii/6.svg" alt="icon"></div>
+                                        <div class="main-news-top-list__head">
+                                            <time class="main-news-top-list__date" datetime="2023-06-30">30 июн,
+                                                12:28</time>
+                                            <div class="main-news-top-list__rubric"><a href="#"
+                                                    title="Киберапокалипсис">Киберапокалипсис</a></div>
+                                        </div>
+                                        <div class="main-news-top-list__title"><a href="./article.html"
+                                                title="Хакеры укрощают Action1: продукт для удаленного мониторинга превратился в инструмент взлома">
+                                                <h4>Хакеры укрощают Action1: продукт для удаленного мониторинга
+                                                    превратился в инструмент взлома</h4>
+                                            </a></div>
+                                    </article>
+                                    <article class="main-news-top-list__item swiper-slide">
+                                        <div class="main-news-top-list__count main-news-top-list__count-7"><img
+                                                src="./image/ascii/7.svg" alt="icon"></div>
+                                        <div class="main-news-top-list__head">
+                                            <time class="main-news-top-list__date" datetime="2023-06-30">30 июн,
+                                                12:28</time>
+                                            <div class="main-news-top-list__rubric"><a href="#"
+                                                    title="Киберапокалипсис">Киберапокалипсис</a></div>
+                                        </div>
+                                        <div class="main-news-top-list__title"><a href="./article.html"
+                                                title="Звёздные войны: в США призвали защитить спутники от атак России и Китая">
+                                                <h4>Звёздные войны: в США призвали защитить спутники от атак России
+                                                    и Китая</h4>
+                                            </a></div>
+                                    </article>
+                                    <article class="main-news-top-list__item swiper-slide">
+                                        <div class="main-news-top-list__count main-news-top-list__count-8"><img
+                                                src="./image/ascii/8.svg" alt="icon"></div>
+                                        <div class="main-news-top-list__head">
+                                            <time class="main-news-top-list__date" datetime="2023-06-30">30 июн,
+                                                12:28</time>
+                                            <div class="main-news-top-list__rubric"><a href="#"
+                                                    title="Киберапокалипсис">Киберапокалипсис</a></div>
+                                        </div>
+                                        <div class="main-news-top-list__title"><a href="./article.html"
+                                                title="Coles подтверждает утечку данных клиентов в результате кибератаки на Latitude Financial">
+                                                <h4>Coles подтверждает утечку данных клиентов в результате кибератаки
+                                                    на Latitude Financial</h4>
+                                            </a></div>
+                                    </article>
+                                </div>
+                            </div>
+                        </aside>
+                        <div class="main-news__main">
+                            <div class="main-news__title">
+                                <h2><span>_Новости</span></h2>
+                            </div>
+                            <div class="main-news__link"><a href="#" title="Показать все">Показать все &#8250;</a></div>
+                            <div class="main-news-list">
+                                <article class="main-news-list__item">
+                                    <div class="main-news-list__head">
+                                        <time class="main-news-list__date" datetime="2023-09-12">12 сен, 15:14</time>
+                                        <div class="main-news-list__rubric"><a href="#" title="Антивирус">Антивирус</a>
+                                        </div>
+                                    </div>
+                                    <div class="main-news-list__details">
+                                        <div class="main-news-list__title"><a href="./article.html"
+                                                title="Positive Technologies: в 70% компаний замечена активность ВПО, которую пропустили базовые средства защиты">
+                                                <h4>Positive Technologies: в 70% компаний замечена активность ВПО,
+                                                    которую пропустили базовые средства защиты</h4>
+                                            </a></div>
+                                        <div class="main-news-list__preview">
+                                            <p>Как эффективно защитить корпоративную сеть, расскажем на презентации PT
+                                                Sandbox 5.0</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="main-news-list__item">
+                                    <div class="main-news-list__head">
+                                        <time class="main-news-list__date" datetime="2023-09-12">12 сен, 15:14</time>
+                                        <div class="main-news-list__rubric"><a href="#"
+                                                title="Киберапокалипсис">Киберапокалипсис</a></div>
+                                    </div>
+                                    <div class="main-news-list__details">
+                                        <div class="main-news-list__title"><a href="./article.html"
+                                                title="Революция искусственного интеллекта: исследователи Google рассуждают о том, как технологии перевернут человеческий мир">
+                                                <h4>Революция искусственного интеллекта: исследователи Google рассуждают
+                                                    о том, как технологии перевернут человеческий мир</h4>
+                                            </a></div>
+                                        <div class="main-news-list__preview">
+                                            <p>Специальные YouTube-уроки наглядно демонстрируют, как им пользоваться</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="main-news-list__item">
+                                    <div class="main-news-list__head">
+                                        <time class="main-news-list__date" datetime="2023-09-12">12 сен, 15:14</time>
+                                        <div class="main-news-list__rubric"><a href="#" title="Атаки">Атаки</a></div>
+                                    </div>
+                                    <div class="main-news-list__details">
+                                        <div class="main-news-list__title"><a href="./article.html"
+                                                title="Маленькая ошибка в коде DeFi-платформы SafeMoon позволила злоумышленникам «выкачать» криптовалюту почти на 9 миллионов долларов">
+                                                <h4>Маленькая ошибка в коде DeFi-платформы SafeMoon позволила
+                                                    злоумышленникам «выкачать» криптовалюту почти на 9 миллионов
+                                                    долларов</h4>
+                                            </a></div>
+                                    </div>
+                                </article>
+                                <article class="main-news-list__item">
+                                    <div class="main-news-list__head">
+                                        <time class="main-news-list__date" datetime="2023-09-12">12 сен, 15:14</time>
+                                        <div class="main-news-list__rubric"><a href="#" title="Антивирус">Антивирус</a>
+                                        </div>
+                                    </div>
+                                    <div class="main-news-list__details">
+                                        <div class="main-news-list__title"><a href="./article.html"
+                                                title="Positive Technologies: в 70% компаний замечена активность ВПО, которую пропустили базовые средства защиты">
+                                                <h4>Positive Technologies: в 70% компаний замечена активность ВПО,
+                                                    которую пропустили базовые средства защиты</h4>
+                                            </a></div>
+                                        <div class="main-news-list__preview">
+                                            <p>Как эффективно защитить корпоративную сеть, расскажем на презентации PT
+                                                Sandbox 5.0</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="main-news-list__item">
+                                    <div class="main-news-list__head">
+                                        <time class="main-news-list__date" datetime="2023-09-12">12 сен, 15:14</time>
+                                        <div class="main-news-list__rubric"><a href="#"
+                                                title="Киберапокалипсис">Киберапокалипсис</a></div>
+                                    </div>
+                                    <div class="main-news-list__details">
+                                        <div class="main-news-list__title"><a href="./article.html"
+                                                title="Революция искусственного интеллекта: исследователи Google рассуждают о том, как технологии перевернут человеческий мир">
+                                                <h4>Революция искусственного интеллекта: исследователи Google рассуждают
+                                                    о том, как технологии перевернут человеческий мир</h4>
+                                            </a></div>
+                                        <div class="main-news-list__preview">
+                                            <p>Специальные YouTube-уроки наглядно демонстрируют, как им пользоваться</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="main-news-list__item">
+                                    <div class="main-news-list__head">
+                                        <time class="main-news-list__date" datetime="2023-09-12">12 сен, 15:14</time>
+                                        <div class="main-news-list__rubric"><a href="#" title="Атаки">Атаки</a></div>
+                                    </div>
+                                    <div class="main-news-list__details">
+                                        <div class="main-news-list__title"><a href="./article.html"
+                                                title="Маленькая ошибка в коде DeFi-платформы SafeMoon позволила злоумышленникам «выкачать» криптовалюту почти на 9 миллионов долларов">
+                                                <h4>Маленькая ошибка в коде DeFi-платформы SafeMoon позволила
+                                                    злоумышленникам «выкачать» криптовалюту почти на 9 миллионов
+                                                    долларов</h4>
+                                            </a></div>
+                                    </div>
+                                </article>
+                                <article class="main-news-list__item">
+                                    <div class="main-news-list__head">
+                                        <time class="main-news-list__date" datetime="2023-09-12">12 сен, 15:14</time>
+                                        <div class="main-news-list__rubric"><a href="#" title="Антивирус">Антивирус</a>
+                                        </div>
+                                    </div>
+                                    <div class="main-news-list__details">
+                                        <div class="main-news-list__title"><a href="./article.html"
+                                                title="Positive Technologies: в 70% компаний замечена активность ВПО, которую пропустили базовые средства защиты">
+                                                <h4>Positive Technologies: в 70% компаний замечена активность ВПО,
+                                                    которую пропустили базовые средства защиты</h4>
+                                            </a></div>
+                                        <div class="main-news-list__preview">
+                                            <p>Как эффективно защитить корпоративную сеть, расскажем на презентации PT
+                                                Sandbox 5.0</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="main-news-list__item">
+                                    <div class="main-news-list__head">
+                                        <time class="main-news-list__date" datetime="2023-09-12">12 сен, 15:14</time>
+                                        <div class="main-news-list__rubric"><a href="#"
+                                                title="Киберапокалипсис">Киберапокалипсис</a></div>
+                                    </div>
+                                    <div class="main-news-list__details">
+                                        <div class="main-news-list__title"><a href="./article.html"
+                                                title="Революция искусственного интеллекта: исследователи Google рассуждают о том, как технологии перевернут человеческий мир">
+                                                <h4>Революция искусственного интеллекта: исследователи Google рассуждают
+                                                    о том, как технологии перевернут человеческий мир</h4>
+                                            </a></div>
+                                        <div class="main-news-list__preview">
+                                            <p>Специальные YouTube-уроки наглядно демонстрируют, как им пользоваться</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="main-news-list__item">
+                                    <div class="main-news-list__head">
+                                        <time class="main-news-list__date" datetime="2023-09-12">12 сен, 15:14</time>
+                                        <div class="main-news-list__rubric"><a href="#" title="Атаки">Атаки</a></div>
+                                    </div>
+                                    <div class="main-news-list__details">
+                                        <div class="main-news-list__title"><a href="./article.html"
+                                                title="Маленькая ошибка в коде DeFi-платформы SafeMoon позволила злоумышленникам «выкачать» криптовалюту почти на 9 миллионов долларов">
+                                                <h4>Маленькая ошибка в коде DeFi-платформы SafeMoon позволила
+                                                    злоумышленникам «выкачать» криптовалюту почти на 9 миллионов
+                                                    долларов</h4>
+                                            </a></div>
+                                    </div>
+                                </article>
+                                <article class="main-news-list__item">
+                                    <div class="main-news-list__head">
+                                        <time class="main-news-list__date" datetime="2023-09-12">12 сен, 15:14</time>
+                                        <div class="main-news-list__rubric"><a href="#" title="Антивирус">Антивирус</a>
+                                        </div>
+                                    </div>
+                                    <div class="main-news-list__details">
+                                        <div class="main-news-list__title"><a href="./article.html"
+                                                title="Positive Technologies: в 70% компаний замечена активность ВПО, которую пропустили базовые средства защиты">
+                                                <h4>Positive Technologies: в 70% компаний замечена активность ВПО,
+                                                    которую пропустили базовые средства защиты</h4>
+                                            </a></div>
+                                        <div class="main-news-list__preview">
+                                            <p>Как эффективно защитить корпоративную сеть, расскажем на презентации PT
+                                                Sandbox 5.0</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="main-news-list__item">
+                                    <div class="main-news-list__head">
+                                        <time class="main-news-list__date" datetime="2023-09-12">12 сен, 15:14</time>
+                                        <div class="main-news-list__rubric"><a href="#"
+                                                title="Киберапокалипсис">Киберапокалипсис</a></div>
+                                    </div>
+                                    <div class="main-news-list__details">
+                                        <div class="main-news-list__title"><a href="./article.html"
+                                                title="Революция искусственного интеллекта: исследователи Google рассуждают о том, как технологии перевернут человеческий мир">
+                                                <h4>Революция искусственного интеллекта: исследователи Google рассуждают
+                                                    о том, как технологии перевернут человеческий мир</h4>
+                                            </a></div>
+                                        <div class="main-news-list__preview">
+                                            <p>Специальные YouTube-уроки наглядно демонстрируют, как им пользоваться</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="main-news-list__item">
+                                    <div class="main-news-list__head">
+                                        <time class="main-news-list__date" datetime="2023-09-12">12 сен, 15:14</time>
+                                        <div class="main-news-list__rubric"><a href="#" title="Атаки">Атаки</a></div>
+                                    </div>
+                                    <div class="main-news-list__details">
+                                        <div class="main-news-list__title"><a href="./article.html"
+                                                title="Маленькая ошибка в коде DeFi-платформы SafeMoon позволила злоумышленникам «выкачать» криптовалюту почти на 9 миллионов долларов">
+                                                <h4>Маленькая ошибка в коде DeFi-платформы SafeMoon позволила
+                                                    злоумышленникам «выкачать» криптовалюту почти на 9 миллионов
+                                                    долларов</h4>
+                                            </a></div>
+                                    </div>
+                                </article>
+                                <article class="main-news-list__item">
+                                    <div class="main-news-list__head">
+                                        <time class="main-news-list__date" datetime="2023-09-12">12 сен, 15:14</time>
+                                        <div class="main-news-list__rubric"><a href="#" title="Антивирус">Антивирус</a>
+                                        </div>
+                                    </div>
+                                    <div class="main-news-list__details">
+                                        <div class="main-news-list__title"><a href="./article.html"
+                                                title="Positive Technologies: в 70% компаний замечена активность ВПО, которую пропустили базовые средства защиты">
+                                                <h4>Positive Technologies: в 70% компаний замечена активность ВПО,
+                                                    которую пропустили базовые средства защиты</h4>
+                                            </a></div>
+                                        <div class="main-news-list__preview">
+                                            <p>Как эффективно защитить корпоративную сеть, расскажем на презентации PT
+                                                Sandbox 5.0</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="main-news-list__item">
+                                    <div class="main-news-list__head">
+                                        <time class="main-news-list__date" datetime="2023-09-12">12 сен, 15:14</time>
+                                        <div class="main-news-list__rubric"><a href="#"
+                                                title="Киберапокалипсис">Киберапокалипсис</a></div>
+                                    </div>
+                                    <div class="main-news-list__details">
+                                        <div class="main-news-list__title"><a href="./article.html"
+                                                title="Революция искусственного интеллекта: исследователи Google рассуждают о том, как технологии перевернут человеческий мир">
+                                                <h4>Революция искусственного интеллекта: исследователи Google рассуждают
+                                                    о том, как технологии перевернут человеческий мир</h4>
+                                            </a></div>
+                                        <div class="main-news-list__preview">
+                                            <p>Специальные YouTube-уроки наглядно демонстрируют, как им пользоваться</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="main-news-list__item">
+                                    <div class="main-news-list__head">
+                                        <time class="main-news-list__date" datetime="2023-09-12">12 сен, 15:14</time>
+                                        <div class="main-news-list__rubric"><a href="#" title="Атаки">Атаки</a></div>
+                                    </div>
+                                    <div class="main-news-list__details">
+                                        <div class="main-news-list__title"><a href="./article.html"
+                                                title="Маленькая ошибка в коде DeFi-платформы SafeMoon позволила злоумышленникам «выкачать» криптовалюту почти на 9 миллионов долларов">
+                                                <h4>Маленькая ошибка в коде DeFi-платформы SafeMoon позволила
+                                                    злоумышленникам «выкачать» криптовалюту почти на 9 миллионов
+                                                    долларов</h4>
+                                            </a></div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="main-news__button">
+                                <div class="button"><a href="#" title="Загрузить еще 10 новостей">Загрузить еще 10
+                                        новостей</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="main-blogs">
+                <div class="container">
+                    <div class="main-blogs content">
+                        <div class="main-blogs__image"><img src="./image/ascii/blogs.svg" alt="Blogs"></div>
+                        <div class="main-blogs__title">
+                            <h2><span>_Hовое_в_блогах</span></h2>
+                        </div>
+                        <div class="main-blogs-list">
+                            <article class="main-blogs-list__item">
+                                <div class="main-blogs-list__head">
+                                    <div class="main-blogs-list__group">
+                                        <div class="main-blogs-list__name"><a href="#" title="Positive_Investing">
+                                                <h3>Positive_Investing</h3>
+                                            </a></div>
+                                        <div class="main-blogs-list__desc">Бизнес без опасности</div>
+                                    </div>
+                                    <div class="main-blogs-list__image"><a href="#" title="Positive_Investing"><img
+                                                src="./image/blog/1.jpg" srcset="./image/blog/1@2x.jpg 2x"
+                                                loading="lazy" alt="Positive_Investing"></a></div>
+                                </div>
+                                <div class="main-blogs-list__details">
+                                    <div class="main-blogs-list__title"><a href="./article.html"
+                                            title="ГК «Росводоканал» управляет привилегированным доступом с помощью решения Indeed PAM">
+                                            <h2>ГК «Росводоканал» управляет привилегированным доступом с помощью решения
+                                                Indeed PAM</h2>
+                                        </a></div>
+                                    <time class="main-blogs-list__date" datetime="2023-03-12">12 мар, 15:14</time>
+                                </div>
+                            </article>
+                            <article class="main-blogs-list__item">
+                                <div class="main-blogs-list__head">
+                                    <div class="main-blogs-list__group">
+                                        <div class="main-blogs-list__name"><a href="#" title="Cloud_Networks">
+                                                <h3>Cloud_Networks</h3>
+                                            </a></div>
+                                        <div class="main-blogs-list__desc">Облачный бизнес</div>
+                                    </div>
+                                    <div class="main-blogs-list__image"><a href="#" title="Cloud_Networks"><img
+                                                src="./image/blog/2.jpg" srcset="./image/blog/2@2x.jpg 2x"
+                                                loading="lazy" alt="Cloud_Networks"></a></div>
+                                </div>
+                                <div class="main-blogs-list__details">
+                                    <div class="main-blogs-list__title"><a href="./article.html"
+                                            title="Темная сторона технологий: развивающаяся угроза атак с использованием дронов">
+                                            <h2>Темная сторона технологий: развивающаяся угроза атак с использованием
+                                                дронов</h2>
+                                        </a></div>
+                                    <time class="main-blogs-list__date" datetime="2023-03-12">12 мар, 15:14</time>
+                                </div>
+                            </article>
+                            <article class="main-blogs-list__item">
+                                <div class="main-blogs-list__head">
+                                    <div class="main-blogs-list__group">
+                                        <div class="main-blogs-list__name"><a href="#" title="Лаборатория_Касперского">
+                                                <h3>Лаборатория_Касперского</h3>
+                                            </a></div>
+                                        <div class="main-blogs-list__desc">Блог компании «Лаборатория Касперского»</div>
+                                    </div>
+                                    <div class="main-blogs-list__image"><a href="#" title="Лаборатория_Касперского"><img
+                                                src="./image/blog/3.jpg" srcset="./image/blog/3@2x.jpg 2x"
+                                                loading="lazy" alt="Лаборатория_Касперского"></a></div>
+                                </div>
+                                <div class="main-blogs-list__details">
+                                    <div class="main-blogs-list__title"><a href="./article.html"
+                                            title="Security Week 2320: патч Microsoft выключит старые загрузочные носители">
+                                            <h2>Security Week 2320: патч Microsoft выключит старые загрузочные носители
+                                            </h2>
+                                        </a></div>
+                                    <time class="main-blogs-list__date" datetime="2023-03-12">12 мар, 15:14</time>
+                                </div>
+                            </article>
+                            <article class="main-blogs-list__item">
+                                <div class="main-blogs-list__head">
+                                    <div class="main-blogs-list__group">
+                                        <div class="main-blogs-list__name"><a href="#" title="indeed">
+                                                <h3>indeed</h3>
+                                            </a></div>
+                                        <div class="main-blogs-list__desc">Компания Индид</div>
+                                    </div>
+                                    <div class="main-blogs-list__image"><a href="#" title="indeed"><img
+                                                src="./image/blog/4.jpg" srcset="./image/blog/4@2x.jpg 2x"
+                                                loading="lazy" alt="indeed"></a></div>
+                                </div>
+                                <div class="main-blogs-list__details">
+                                    <div class="main-blogs-list__title"><a href="./article.html"
+                                            title="ГК «Агроэко» выбирает Indeed AM для защиты данных">
+                                            <h2>ГК «Агроэко» выбирает Indeed AM для защиты данных</h2>
+                                        </a></div>
+                                    <time class="main-blogs-list__date" datetime="2023-03-12">12 мар, 15:14</time>
+                                </div>
+                            </article>
+                            <article class="main-blogs-list__item">
+                                <div class="main-blogs-list__head">
+                                    <div class="main-blogs-list__group">
+                                        <div class="main-blogs-list__name"><a href="#" title="Юрий_Кочетов">
+                                                <h3>Юрий_Кочетов</h3>
+                                            </a></div>
+                                        <div class="main-blogs-list__desc">Просто хакер</div>
+                                    </div>
+                                    <div class="main-blogs-list__image"><a href="#" title="Юрий_Кочетов"><img
+                                                src="./image/blog/5.jpg" srcset="./image/blog/5@2x.jpg 2x"
+                                                loading="lazy" alt="Юрий_Кочетов"></a></div>
+                                </div>
+                                <div class="main-blogs-list__details">
+                                    <div class="main-blogs-list__title"><a href="./article.html"
+                                            title="Хакерские соревнования: что это такое и как в них участвовать">
+                                            <h2>Хакерские соревнования: что это такое и как в них участвовать</h2>
+                                        </a></div>
+                                    <time class="main-blogs-list__date" datetime="2023-03-12">12 мар, 15:14</time>
+                                </div>
+                            </article>
+                            <article class="main-blogs-list__item">
+                                <div class="main-blogs-list__head">
+                                    <div class="main-blogs-list__group">
+                                        <div class="main-blogs-list__name"><a href="#" title="Positive_Investing">
+                                                <h3>Positive_Investing</h3>
+                                            </a></div>
+                                        <div class="main-blogs-list__desc">Бизнес без опасности</div>
+                                    </div>
+                                    <div class="main-blogs-list__image"><a href="#" title="Positive_Investing"><img
+                                                src="./image/blog/1.jpg" srcset="./image/blog/1@2x.jpg 2x"
+                                                loading="lazy" alt="Positive_Investing"></a></div>
+                                </div>
+                                <div class="main-blogs-list__details">
+                                    <div class="main-blogs-list__title"><a href="./article.html"
+                                            title="Акционеры Positive Technologies утвердили вторую часть дивидендов за 2022 год: общая сумма выплат составит 3,75 млрд рублей или 56,81 рубля на акцию">
+                                            <h2>Акционеры Positive Technologies утвердили вторую часть дивидендов за
+                                                2022 год: общая сумма выплат составит 3,75 млрд рублей или 56,81 рубля
+                                                на акцию</h2>
+                                        </a></div>
+                                    <time class="main-blogs-list__date" datetime="2023-03-12">12 мар, 15:14</time>
+                                </div>
+                            </article>
+                            <div class="main-blogs-list__link"><a href="./blogs.html" title="Показать все">Показать все
+                                    &#8250;</a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer content">
+                    <div class="footer__main">
+                        <div class="footer-ascii">
+                            <div class="footer-ascii__art"><img src="./image/ascii/logo-1.svg" alt="SecurityLab"></div>
+                        </div>
+                        <div class="footer-copyright">_security<span>_lab_&copy;2023</span></div>
+                    </div>
+                    <div class="footer__navigation">
+                        <div class="footer__group">
+                            <nav class="footer-menu">
+                                <div class="footer-menu__title"><a href="#" title="Новости">Новости</a></div>
+                            </nav>
+                            <nav class="footer-menu">
+                                <div class="footer-menu__title"><a href="./blogs.html" title="Блоги">Блоги</a></div>
+                                <ul class="footer-menu__list">
+                                    <li class="footer-menu__item"><a href="#" title="Личные блоги">Личные блоги</a></li>
+                                    <li class="footer-menu__item"><a href="#" title="Блоги компаний">Блоги компаний</a>
+                                    </li>
+                                    <li class="footer-menu__item"><a href="#" title="Правила публикаций">Правила
+                                            публикаций</a></li>
+                                </ul>
+                            </nav>
+                            <nav class="footer-menu">
+                                <div class="footer-menu__title"><a href="#" title="Статьи">Статьи</a></div>
+                                <ul class="footer-menu__list">
+                                    <li class="footer-menu__item"><a href="#" title="Мнения">Мнения</a></li>
+                                    <li class="footer-menu__item"><a href="#" title="Конкурсы">Конкурсы</a></li>
+                                </ul>
+                            </nav>
+                            <nav class="footer-menu">
+                                <div class="footer-menu__title"><a href="#" title="Уязвимости">Уязвимости</a></div>
+                                <ul class="footer-menu__list">
+                                    <li class="footer-menu__item"><a href="#" title="PT Research Lab">PT Research
+                                            Lab</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer__group">
+                            <nav class="footer-menu">
+                                <div class="footer-menu__title"><a href="#" title="Софт">Софт</a></div>
+                                <ul class="footer-menu__list">
+                                    <li class="footer-menu__item"><a href="#" title="Системные утилиты">Системные
+                                            утилиты</a></li>
+                                    <li class="footer-menu__item"><a href="#" title="Сетевые утилиты">Сетевые
+                                            утилиты</a></li>
+                                    <li class="footer-menu__item"><a href="#" title="Беспроводные сети">Беспроводные
+                                            сети</a></li>
+                                    <li class="footer-menu__item"><a href="#" title="Конкурентная разведка">Конкурентная
+                                            разведка</a></li>
+                                    <li class="footer-menu__item"><a href="#"
+                                            title="Программы для веб-мастеров">Программы для веб-мастеров</a></li>
+                                    <li class="footer-menu__item"><a href="#" title="Разработка">Разработка</a></li>
+                                    <li class="footer-menu__item"><a href="#" title="Активное противодействие">Активное
+                                            противодействие</a></li>
+                                </ul>
+                            </nav>
+                            <nav class="footer-menu">
+                                <div class="footer-menu__title"><a href="#" title="О проекте">О проекте</a></div>
+                                <ul class="footer-menu__list">
+                                    <li class="footer-menu__item"><a href="#" title="Контакты">Контакты</a></li>
+                                    <li class="footer-menu__item"><a href="#" title="Реклама">Реклама</a></li>
+                                    <li class="footer-menu__item"><a href="#" title="Экспорт статей">Экспорт статей</a>
+                                    </li>
+                                    <li class="footer-menu__item"><a href="#" title="RSS">RSS</a></li>
+                                    <li class="footer-menu__item"><a href="#"
+                                            title="Использование материалов">Использование материалов</a></li>
+                                    <li class="footer-menu__item"><a href="#" title="Обработка данных">Обработка
+                                            данных</a></li>
+                                    <li class="footer-menu__item"><a href="#" title="Карта сайта">Карта сайта</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer__group">
+                            <nav class="footer-menu">
+                                <div class="footer-menu__title"><a href="#" title="PHDays">PHDays</a></div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- js-->
+    <script defer src="./assets/js/vendors.js"></script>
+    <script defer src="./assets/js/main.js"></script>
+</body>
+
+</html>

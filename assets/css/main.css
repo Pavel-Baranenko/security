@@ -2699,6 +2699,7 @@ footer .container .footer-menu__item a {
     -o-object-fit: cover;
     object-fit: cover;
     width: 100%;
+    height: 300px;
   }
 
   #article .container .article-feed {
@@ -5538,4 +5539,49 @@ header {
   /* 86.667% */
   letter-spacing: -0.75px;
   cursor: pointer;
+}
+
+.qt {
+  position: relative;
+}
+
+.qt::after {
+  display: inline;
+  content: "";
+  background-image: url(../../image/qt.png);
+  height: 92.7%;
+  position: absolute;
+  width: 15px;
+  left: -22px;
+  top: 18px;
+}
+
+.article-body__image-figcap p {
+  color: var(--text-secondary-on-white, rgba(11, 24, 35, 0.50));
+
+  /* mastheads */
+  font-family: Fira Code;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 13px;
+  /* 100% */
+  letter-spacing: -0.65px;
+}
+
+.top-block {
+  color: var(--text-active-blue, #00AEE5);
+  font-family: Fira Code;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -1.1px;
+  border-radius: 2px;
+  background: var(--background-dark, #1B252E);
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
 }

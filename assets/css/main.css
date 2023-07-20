@@ -5310,3 +5310,36 @@ header .container .header-menu-bar-b a svg {
     flex-direction: column;
   }
 }
+
+.header__label {
+  position: absolute;
+  right: 0;
+  top: 12px;
+}
+
+.header__label img {
+  box-shadow: none;
+  -webkit-filter: none;
+  filter: none;
+}
+
+.header-blog-new {
+  left: 25%;
+}
+
+.header__label-text {
+  position: absolute;
+  right: 4px;
+  bottom: 9px;
+  z-index: 1;
+  color: #00AEE5;
+  /* font-feature-settings: 'case' on;
+  text-shadow: 0px 0px 34px 0px rgba(0, 225, 255, 0.50), 0px 24px 220px 0px #00E1FF; */
+  font-family: Fira Code;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 9px;
+  /* 90% */
+  letter-spacing: -0.2px;
+}

@@ -5343,3 +5343,13 @@ header .container .header-menu-bar-b a svg {
   /* 90% */
   letter-spacing: -0.2px;
 }
+
+@media (max-width: 1280px) {
+  .header__label {
+    display: none;
+  }
+
+  .header-blog-new img {
+    margin: 0 auto;
+  }
+}

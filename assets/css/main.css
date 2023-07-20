@@ -5323,8 +5323,8 @@ header .container .header-menu-bar-b a svg {
   filter: none;
 }
 
-.header-blog-new {
-  left: 25%;
+.header-blog-new img {
+  margin: 0 auto 0 0;
 }
 
 .header__label-text {

@@ -5191,3 +5191,84 @@ header .container .header-menu-bar-b a svg {
 .bark-bg .container-fluid {
   padding: 0;
 }
+
+.blogs__box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 40px;
+  margin-bottom: 20px;
+}
+
+.blogs__box-item {
+  display: flex;
+  flex-direction: column;
+  height: 270px;
+  padding: 16px;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 174, 229, 0.30);
+  box-shadow: 8px 8px 0px 0px rgba(0, 137, 181, 0.16);
+}
+
+.item-blog-img img {
+  border-radius: 16px;
+}
+
+.item-blog__bottom {
+  margin-top: auto;
+}
+
+@media (max-width: 767px) {
+  .blogs__box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .blogs__box-item {
+    height: 196px;
+  }
+}
+
+.search__top {
+  display: flex;
+  width: 100%;
+  border-radius: 2px;
+  border: 1px solid var(--divider-blue, rgba(0, 174, 229, 0.30));
+  margin-bottom: 32px;
+}
+
+.search__input {
+  height: 100%;
+  height: 31.75px;
+  flex: 1;
+  padding-left: 10px;
+  color: var(--text-active-blue, #00AEE5);
+  font-family: Fira Code;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1;
+  /* 100% */
+  letter-spacing: -0.65px;
+}
+
+.search__input::placeholder {
+  color: var(--text-active-blue, #00AEE5);
+  font-family: Fira Code;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1;
+  /* 100% */
+  letter-spacing: -0.65px;
+}
+
+.search__btn {
+  color: #FBFEFF;
+  text-align: center;
+  font-family: Fira Code;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.65px;
+  padding: 10px 12px;
+  border-radius: 1px;
+  background: var(--text-active-blue, #00AEE5);
+  border: none;
+}

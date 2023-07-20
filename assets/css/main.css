@@ -5868,3 +5868,11 @@ header {
 .overx::-webkit-scrollbar {
   display: none;
 }
+
+.mb40 {
+  margin-bottom: 40px;
+}
+
+.themes__top {
+  margin-top: 14px;
+}

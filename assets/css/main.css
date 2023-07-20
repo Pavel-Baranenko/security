@@ -5802,3 +5802,65 @@ header {
     padding: 7px 10px;
   }
 }
+
+.header-blog .logo-7.rfr {
+  height: 157px;
+}
+
+.gh h4 {
+  font-size: 16px;
+}
+
+.btn_line {
+  padding: 0;
+}
+
+.modal__inner {
+  position: relative;
+}
+
+.mod-b {
+  position: absolute;
+}
+
+.formwrap {
+  margin-top: 136px;
+}
+
+.modal .formwrap .btn_light {
+  color: #FBFEFF;
+  text-align: center;
+  font-family: Fira Code;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 13px;
+  /* 100% */
+  letter-spacing: -0.65px;
+}
+
+.modal .formwrap .btn_transparent {
+  color: #00AEE5;
+  text-align: center;
+  font-family: Fira Code;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 13px;
+  /* 100% */
+  letter-spacing: -0.65px;
+}
+
+.glos-news {
+  display: flex;
+  max-width: fit-content;
+}
+
+.glos-news .main-news-list__item {
+  width: 340px;
+}
+
+.overx {
+  max-width: 860px;
+  overflow-x: auto;
+}

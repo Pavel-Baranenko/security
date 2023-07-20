@@ -5853,7 +5853,7 @@ header {
 
 .glos-news {
   display: flex;
-  max-width: fit-content;
+  width: fit-content;
 }
 
 .glos-news .main-news-list__item {
@@ -5863,4 +5863,8 @@ header {
 .overx {
   max-width: 860px;
   overflow-x: auto;
+}
+
+.overx::-webkit-scrollbar {
+  display: none;
 }

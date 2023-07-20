@@ -5272,3 +5272,41 @@ header .container .header-menu-bar-b a svg {
   background: var(--text-active-blue, #00AEE5);
   border: none;
 }
+
+.ptn {
+  padding-top: 0;
+}
+
+.news__archive-btn {
+  color: #01AEE5;
+  font-family: Fira Code;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.65px;
+  padding: 11px 16px;
+  border-radius: 3px;
+  background: rgba(0, 174, 229, 0.20);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.news-btn__box {
+  display: flex;
+  gap: 0 32px;
+  align-items: center;
+}
+
+@media (max-width:767px) {
+  .news__archive-btn {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .news-btn__box {
+    display: flex;
+    gap: 12px 0;
+    flex-direction: column;
+  }
+}

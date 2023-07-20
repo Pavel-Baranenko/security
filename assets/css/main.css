@@ -5095,19 +5095,20 @@ header .container .header-menu-bar-b a svg {
     display: block;
   }
 
-  .header-logo {
+  /* .header-logo {
     display: none;
-  }
+  } */
 
   .dnbg {
     display: none;
   }
 
-  .false__subtitle {
+  /* .false__subtitle {
     display: none;
-  }
+  } */
 
-  .false__title-mb {
+
+  /* .false__title-mb {
     display: block;
     color: #E50101;
     font-family: Fira Code;
@@ -5117,17 +5118,76 @@ header .container .header-menu-bar-b a svg {
     line-height: 1;
     letter-spacing: -6px;
     margin-top: 70px;
-  }
+  } */
 
-  .false__title {
+  /* .false__title {
     display: none;
-  }
+  } */
 
-  header .container .header-menu-bar-b a svg {
+  /* header .container .header-menu-bar-b a svg {
     fill: #E50101;
   }
 
   header .container .header-menu-bar-b:before {
     display: none;
+  } */
+  .false__title {
+    font-size: 90px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
+
+  .false__subtitle {
+
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.item-blog__text {
+  color: #0B1823;
+  font-family: Fira Code;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.4px;
+}
+
+.item-blog__top {
+  padding-bottom: 8px;
+
+
+  border-bottom: 1px solid rgba(0, 174, 229, 0.30);
+
+}
+
+.item-blog__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-blog-name {
+  color: var(--text-darkest, #0B1823);
+  font-family: Fira Code;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.3px;
+}
+
+.item-blog-lastname {
+  color: var(--text-secondary-on-white, rgba(11, 24, 35, 0.50));
+  font-family: Fira Code;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 18px;
+  letter-spacing: -0.3px;
+}
+
+.bark-bg .container-fluid {
+  padding: 0;
 }

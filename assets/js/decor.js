@@ -79,3 +79,12 @@ decodeText();
 
 // beware: refresh button can overlap this timer and cause state mixups
 setInterval(function () { decodeText(); }, 10000);
+
+var element = document.querySelector('._fixed');
+window.addEventListener('scroll', function () {
+  if (window.scrollY > 100) {
+    element.classList.add("shadow");
+  } else {
+    element.classList.remove("shadow");
+  }
+});

@@ -78,27 +78,25 @@
                             <li class="menu-navigation__item"><a href="./blogs.html" class="menu-navigation__item__link"
                                     title="Блоги">Блоги</a></li>
                             <li class="menu-navigation__item">
-                                <a href="#" class="menu-navigation__item__link" data-action="open-submenu" data-submenu="glossary"
-                                    title="Глосарий"><span>Глосарий</span></a>
-                                    <ul class="menu-navigation__submenu" data-name="glossary">
-                                        <li class="menu-navigation__item">
-                                            <a href="#"
-                                                class="menu-navigation__item__link"
-                                                title="Терминология">Терминология</a>
-                                        </li>
-                                        <li class="menu-navigation__item">
-                                            <a href="#"
-                                                class="menu-navigation__item__link"
-                                                title="Хакерские группировки">Хакерские группировки</a>
-                                        </li>
-                                        <li class="menu-navigation__item">
-                                            <a href="#"
-                                                class="menu-navigation__item__link" title="Каталог софта"><span>Каталог
-                                                    софта</span>
-                                            </a>
+                                <a href="#" class="menu-navigation__item__link" data-action="open-submenu"
+                                    data-submenu="glossary" title="Глосарий"><span>Глосарий</span></a>
+                                <ul class="menu-navigation__submenu" data-name="glossary">
+                                    <li class="menu-navigation__item">
+                                        <a href="#" class="menu-navigation__item__link"
+                                            title="Терминология">Терминология</a>
+                                    </li>
+                                    <li class="menu-navigation__item">
+                                        <a href="#" class="menu-navigation__item__link"
+                                            title="Хакерские группировки">Хакерские группировки</a>
+                                    </li>
+                                    <li class="menu-navigation__item">
+                                        <a href="#" class="menu-navigation__item__link"
+                                            title="Каталог софта"><span>Каталог
+                                                софта</span>
+                                        </a>
 
-                                        </li>
-                                    </ul>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </nav>
@@ -154,12 +152,42 @@
                         <div class="btn">→] Войти</div>
                     </div>
                     <article class="contentpage">
-                        
-                            
-                            <div class="blogpage__title">
-                                <h1 class="article__title">Новая заметка</h1>
+
+                        <div class="blogpage__title">
+                            <h1 class="article__title">Новая заметка</h1>
+                        </div>
+                        <div class="new__form">
+                            <input type="text" class="new__input" placeholder="Заголовок">
+                            <button class="new__btn">Добавить фото в шапку</button>
+                        </div>
+                        <div class="new__block">
+                            <div class="new__block-top">
+                                <img src="image/Screenshot.png" alt="">
                             </div>
-                            <img src="./image/editor.jpg" alt="SecurityLab">
+                            <div class="new__block-text">
+                                При шифровании файлов программа-вымогатель добавит расширение «.royal_u» ко всем
+                                зашифрованным файлам на виртуальной машине. Ранее антивирусные решения ранее не могли
+                                обнаружить новый образец Royal Ransomware, но теперь он обнаруживается 23 из 62 модулей
+                                сканирования на VirusTotal. Исследователь кибербезопасности Уилл Томас из Центра анализа
+                                угроз Equinix (ETAC) обнаружил , что программа-вымогатель Royal Ransomware добавила
+                                поддержку шифрования устройств Linux к своим последним вариантам вредоносного ПО,
+                                нацеленным на виртуальные машины VMware ESXi.
+                            </div>
+                        </div>
+                        <div class="new__cta">
+                            <img src="image/new-cta.svg" alt="">
+                            <button class="new-cta-btn">Выбрать файл с диска</button>
+                        </div>
+                        <div class="new__tegs">
+                            Теги · Разделять запятыми
+                        </div>
+                        <div class="new__buttons">
+                            <div class="new__buttons-left">
+                                <button class="new-blu">Сохранить</button>
+                                <button class="new-blu">Опубликовать</button>
+                            </div>
+                            <div class="new-grey">Удалить</div>
+                        </div>
                     </article>
                 </div>
             </section>
@@ -261,8 +289,8 @@
                         <button class="btn btn_light">Войти</button>
                         <button class="btn btn_transparent">Восстановить пароль</button>
                     </form>
-                </div>   
-                    
+                </div>
+
             </div>
         </div>
     </div>
@@ -271,19 +299,19 @@
     <script defer src="./assets/js/vendors.js"></script>
     <script defer src="./assets/js/main.js"></script>
     <script>
-            function modal(){
-                $('body').addClass('oh');
-                $('.modal-bg').addClass('vis');
-                $('.modal').addClass('vis');
-            }
-            $('.btn').click(modal);
+        function modal() {
+            $('body').addClass('oh');
+            $('.modal-bg').addClass('vis');
+            $('.modal').addClass('vis');
+        }
+        $('.btn').click(modal);
 
-            $('.modal-bg').on('click',function (e) {
-                $('body').removeClass('oh');
-                $('.modal-bg').removeClass('vis');
-                $('.modal').removeClass('vis');
-                
-            });
+        $('.modal-bg').on('click', function (e) {
+            $('body').removeClass('oh');
+            $('.modal-bg').removeClass('vis');
+            $('.modal').removeClass('vis');
+
+        });
     </script>
 
 </body>

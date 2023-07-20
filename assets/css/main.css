@@ -3658,7 +3658,7 @@ main {
 }
 
 .contentpage {
-  width: 860px;
+  max-width: 860px;
   margin: 0 auto;
 }
 
@@ -5584,4 +5584,221 @@ header {
   margin: 0 auto;
   margin-top: 20px;
   padding: 20px;
+}
+
+.asd h4 {
+  font-size: 16px;
+}
+
+.blogpage__title .article__title span {
+  line-height: 1;
+  height: 50px;
+  display: inline-block;
+  padding: 4px 1px 12px 4px;
+}
+
+.header-blog .logo-7.das {
+  height: 182px;
+}
+
+.drafts .btn_line {
+  margin: 0;
+  padding: 0;
+}
+
+.new__form {
+  position: relative;
+  z-index: 9999999999;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+  border: 1px solid var(--divider-blue, rgba(0, 174, 229, 0.30));
+  background: #FFF;
+  margin-bottom: 20px;
+}
+
+.new__input {
+  width: 100%;
+  background: #FFF;
+  height: 100%;
+  padding: 5px 10px;
+}
+
+.new__input::placeholder {
+  color: var(--text-active-blue, #00AEE5);
+
+  /* article-code */
+  font-family: IBM Plex Mono;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  /* 145.455% */
+}
+
+.new__btn {
+  border: none;
+  color: #FBFEFF;
+  text-align: center;
+  font-family: Fira Code;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 12px;
+  /* 80% */
+  letter-spacing: -0.75px;
+  border-radius: 2px;
+  background: var(--text-active-blue, #00AEE5);
+  padding: 12px 16px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.new__block {
+  border-radius: 2px;
+  border: 1px solid var(--divider-blue, rgba(0, 174, 229, 0.30));
+  background: #FFF;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+}
+
+.new__block-text {
+  color: #0B1823;
+
+  /* article-text */
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  /* 155.556% */
+  letter-spacing: -0.5px;
+  margin-top: 20px;
+  margin-bottom: 315px;
+}
+
+.new__cta {
+  display: flex;
+  align-items: flex-end;
+  border-radius: 2px;
+  border: 1px solid var(--divider-blue, rgba(0, 174, 229, 0.30));
+  background: var(--secondary-elements-blue, rgba(0, 174, 229, 0.30));
+  padding: 7px 16px 5px 10px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.new-cta-btn {
+  color: #FBFEFF;
+  text-align: center;
+  font-family: Fira Code;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 13px;
+  /* 86.667% */
+  letter-spacing: -0.75px;
+  padding: 10px 12px;
+  border-radius: 2px;
+  background: var(--text-active-blue, #00AEE5);
+  border: none;
+  margin-bottom: 11px;
+  cursor: pointer;
+}
+
+
+.new__cta img {
+  width: auto;
+}
+
+.new__tegs {
+  border-radius: 2px;
+  border: 1px solid var(--divider-blue, rgba(0, 174, 229, 0.30));
+  background: #FFF;
+  padding: 5px 10px;
+  color: var(--text-active-blue, #00AEE5);
+
+  /* article-code */
+  font-family: IBM Plex Mono;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  /* 145.455% */
+  margin-bottom: 20px;
+}
+
+.new__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 74px;
+}
+
+.new__buttons-left {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+}
+
+.new-blu {
+  color: #FBFEFF;
+  text-align: center;
+  font-family: Fira Code;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 13px;
+  /* 86.667% */
+  letter-spacing: -0.75px;
+  padding: 14.5px 62.5px;
+  border-radius: 2px;
+  background: var(--text-active-blue, #00AEE5);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.new-blu:hover,
+.new-grey:hover {
+  opacity: 0.4000000059604645;
+}
+
+.new-grey {
+  transition: all 0.3s ease;
+  border: none;
+  color: var(--text-active-blue, #00AEE5);
+  text-align: center;
+  font-family: Fira Code;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 13px;
+  /* 86.667% */
+  letter-spacing: -0.75px;
+  border-radius: 2px;
+  background: var(--secondary-elements-blue, rgba(0, 174, 229, 0.30));
+  padding: 14.5px 70.5px;
+  cursor: pointer;
+}
+
+.contentpage {
+  max-width: 1200px;
+}
+
+@media screen and (max-width:992px) {
+  .new__cta img {
+    width: 68%;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .new__cta img {
+    width: 50%;
+  }
+
+  .new-cta-btn {
+    margin-bottom: 0;
+    padding: 7px 10px;
+  }
 }

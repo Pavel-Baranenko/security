@@ -5350,13 +5350,20 @@ header .container .header-menu-bar-b a svg {
 }
 
 @media (max-width: 1280px) {
-  .header__label {
+  /* .header__label {
     display: none;
-  }
+  } */
 
   .header-blog-new img {
     margin: 0 auto;
   }
+}
+
+@media (max-width: 1280px) {
+  /* .header__label {
+    display: none;
+  } */
+
 }
 
 /*----Text Decor---------------------------------*/
@@ -5960,6 +5967,7 @@ header {
   width: 100%;
   max-width: 1200px;
   padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .article__quote-author {

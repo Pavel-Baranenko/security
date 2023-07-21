@@ -2828,7 +2828,7 @@ footer .container .footer-menu__item a {
 
   header .container .header-ascii__art img.logo-4 {
     height: 85px;
-    width: 920px;
+    width: 721px;
   }
 
   header .container .header-ascii__art img.logo-5 {
@@ -5959,6 +5959,7 @@ header {
   background-color: #fff;
   width: 100%;
   max-width: 1200px;
+  padding-bottom: 10px;
 }
 
 .article__quote-author {

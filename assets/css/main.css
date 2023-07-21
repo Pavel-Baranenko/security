@@ -6040,25 +6040,25 @@ header._fixed.shadow .container .header {
   text-align: right;
 }
 
-@media (max-width: 1280px) {
+/* @media (max-width: 1280px) {
   ._fixed.shadow {
     width: calc(992px - 4rem);
   }
-}
+} */
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   ._fixed.shadow {
     width: calc(767px - 4rem);
   }
-}
+} */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   ._fixed.shadow {
     left: 0;
     width: calc(100% - 0rem);
     padding: 0 1rem;
   }
-}
+} */
 
 @media screen and (max-width:435px) {
   .false__title {

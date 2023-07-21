@@ -5183,6 +5183,10 @@ header .container .header-menu-bar-b a svg {
   letter-spacing: -0.3px;
 }
 
+.mtnew {
+  margin-top: 28px;
+}
+
 .item-blog-lastname {
   color: var(--text-secondary-on-white, rgba(11, 24, 35, 0.50));
   font-family: Fira Code;
@@ -5498,8 +5502,11 @@ header {
 }
 
 .blue-btn:hover {
-  opacity: 0.4000000059604645;
+  opacity: 0.8000000059604645;
+  color: #FFF;
 }
+
+
 
 /*----Text Decor---------------------------------*/
 
@@ -6218,4 +6225,8 @@ header {
 
 .overx {
   width: auto;
+}
+
+.width-a {
+  width: auto !important;
 }

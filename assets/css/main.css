@@ -6388,3 +6388,19 @@ header {
 .menu-navigation__submenu .menu-navigation__item:nth-child(2)>a {
   height: 48px;
 }
+
+.swiper-slide {
+  border-bottom: 1px solid rgba(0, 174, 229, 0.30);
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  height: 140px;
+}
+
+@media (max-width: 992px) {
+  .swiper-slide {
+    border-bottom: none;
+    padding-bottom: 16px;
+    margin-bottom: 0;
+    height: auto;
+  }
+}

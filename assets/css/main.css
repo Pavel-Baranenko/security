@@ -5474,10 +5474,39 @@ header {
   display: none;
 }
 
+.max-space {
+  width: 100%;
+}
 
 @media (max-width:992px) {
 
+  .text-animation {
+    font-size: 30px;
+    line-height: 1;
+  }
 
+
+
+  .max-space {
+    width: 10px;
+  }
+
+  .max-space-mob {
+    width: 100%;
+  }
+
+  /* .deskn {
+    display: inline;
+    background-color: #FFF;
+    box-shadow: -10px 0 0 #FFF, 10px 0 0 #FFF;
+  }
+
+  .decode-text {
+    display: none;
+  } */
+}
+
+@media (max-width: 768px) {
   .deskn {
     display: inline;
     background-color: #FFF;
@@ -5488,7 +5517,6 @@ header {
     display: none;
   }
 }
-
 
 
 .art {
@@ -6349,7 +6377,7 @@ header {
   background: rgba(0, 174, 229, 0.30);
 }
 
-._fixed.shadow .content::before {
+/* ._fixed.shadow .content::before {
   display: block;
   content: "";
   max-width: 143px;
@@ -6362,7 +6390,7 @@ header {
   border-radius: 0px 0px 1px 1px;
   border-radius: 0px 0px 0px 1px;
   background: rgba(0, 174, 229, 0.80);
-}
+} */
 
 @media (max-width: 1280px) {
   ._fixed.shadow .content::after {
@@ -6432,4 +6460,67 @@ header {
     margin-left: 1px;
     background: #49C7EE;
   }
+}
+
+@media (max-width: 992px) {
+  #article .container .article__text .wiki-tooltip {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 500px) {
+  #article .container .article__text .wiki-tooltip {
+    left: -49px;
+
+  }
+
+  #article .container .article__text .wiki-tooltip .wiki-tooltip__text {
+    width: 300px;
+    font-size: 12px;
+  }
+}
+
+.progress-wrap {
+  max-width: 860px;
+  position: relative;
+}
+
+.progress-bar {
+  display: none;
+  position: relative;
+  right: 845px;
+  left: 341px;
+  top: 7px;
+  height: 5px;
+  width: 0%;
+  background: #00AEE5;
+}
+
+._fixed.shadow .progress-bar {
+  display: block;
+}
+
+@media (max-width:1280px) {
+  .progress-bar {
+    left: 317px;
+  }
+}
+
+@media (max-width:992px) {
+  .progress-bar {
+    left: 0;
+  }
+}
+
+
+
+.go {
+  min-height: 1px;
+  min-width: 1px;
+  height: 0px;
+}
+
+.mbf {
+  margin-top: 0 !important;
 }

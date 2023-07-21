@@ -47,8 +47,13 @@
                   </svg></a></div>
             </div>
           </div>
+          <div class="progress-wrap">
+            <div class="progress-bar" id="progressBar"></div>
+          </div>
         </div>
+
       </div>
+
     </header>
     <!-- Menu-->
     <div class="menu">
@@ -149,6 +154,7 @@
               <div class="article__banner article__banner--small"><a href="#" target="_blank"
                   title="Стань спикером на PHDAYS12"><img src="./image/banner/phdays12.jpg"
                     srcset="./image/banner/phdays12@2x.jpg 2x" loading="lazy" alt="PHDAYS12"></a></div>
+              <div class="go" id="go"></div>
               <div class="article-feed slider mbf">
                 <div class="article-feed__title">
                   <h2><span>_Лента</span></h2>
@@ -277,7 +283,7 @@
                         <div class="text-animation">а</div>
                         <div class="text-animation">е</div>
                         <div class="text-animation">т</div>
-                        <div class="space ac"></div>
+                        <div class="space ac max-space"></div>
                         <div class="text-animation">д</div>
                         <div class="text-animation">а</div>
                         <div class="text-animation">н</div>
@@ -298,7 +304,7 @@
                         <div class="text-animation">н</div>
                         <div class="text-animation">о</div>
                         <div class="text-animation">в</div>
-                        <div class="space ac"></div>
+                        <div class="space ac max-space"></div>
                         <div class="text-animation">п</div>
                         <div class="text-animation">о</div>
                         <div class="text-animation">л</div>
@@ -319,7 +325,7 @@
                         <div class="space ac"></div>
                         <div class="text-animation">и</div>
                         <div class="text-animation">х</div>
-                        <div class="space"></div>
+                        <div class="space max-space"></div>
                         <div class="text-animation">с</div>
                         <div class="text-animation">о</div>
                         <div class="text-animation">г</div>
@@ -550,6 +556,16 @@
   <script defer src="./assets/js/vendors.js?v=da32d7a"></script>
   <script defer src="./assets/js/decor.js"></script>
   <script defer src="./assets/js/main.js?v=4c15106"></script>
+  <script src="./assets/js/progressbar.js"></script>
+  <!-- <script>
+    function scroll() {
+      const scrolling = document.body.scrollTop || document.documentElement.scrollTop;
+      console.log(scrolling);
+      document.getElementById("go").style.marginTop = (scrolling - 300) + 'px';
+    }
+
+    window.addEventListener('scroll', scroll);
+  </script> -->
 </body>
 
 </html>

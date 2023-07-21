@@ -5366,6 +5366,10 @@ header .container .header-menu-bar-b a svg {
 
 }
 
+.article__code-item {
+  font-family: Fira Code;
+}
+
 /*----Text Decor---------------------------------*/
 .decode-text {
   width: 100%;
@@ -6035,4 +6039,16 @@ header {
 
 .ad {
   z-index: 99;
+}
+
+@media (max-width: 1280px) {
+
+
+  .space.ac {
+    width: 100%;
+  }
+
+  .text-animation {
+    background-color: #fff;
+  }
 }

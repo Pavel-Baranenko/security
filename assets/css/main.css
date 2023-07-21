@@ -5367,7 +5367,12 @@ header .container .header-menu-bar-b a svg {
 }
 
 .article__code-item {
-  font-family: Fira Code;
+  font-family: IBM Plex Mono;
+  font-weight: 400;
+}
+
+.article__code p {
+  font-weight: 400;
 }
 
 /*----Text Decor---------------------------------*/
@@ -5545,15 +5550,27 @@ header {
   position: relative;
 }
 
-.qt::after {
+/* .qt::after {
   display: inline;
   content: "";
-  background-image: url(../../image/qt.png);
+  background-image: url(../../image/qt.jpg);
   height: 92.7%;
   position: absolute;
   width: 15px;
   left: -22px;
   top: 18px;
+} */
+.qt-el {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  display: inline;
+}
+
+.qt {
+  overflow: hidden;
+  padding-left: 22px;
 }
 
 .article-body__image-figcap p {
@@ -6050,5 +6067,26 @@ header {
 
   .text-animation {
     background-color: #fff;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .quote-new-bg {
+    height: 156px;
+    object-fit: cover;
+    max-width: none;
+    /* transform: rotate(90deg); */
+  }
+
+  .quote-new {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .quote-new-bg {
+    height: auto;
+    object-fit: cover;
+    max-width: 100%;
   }
 }

@@ -5721,13 +5721,16 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 74px;
+  gap: 10px 0;
 }
 
 .new__buttons-left {
   display: flex;
   align-items: center;
-  gap: 0 20px;
+  flex-wrap: wrap;
+  gap: 10px 20px;
 }
 
 .new-blu {
@@ -5980,4 +5983,47 @@ header {
     width: calc(100% - 0rem);
     padding: 0 1rem;
   }
+}
+
+@media screen and (max-width:435px) {
+  .false__title {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width:992px) {
+  .top-block {
+    display: none;
+  }
+
+  .telegramm {
+    display: none;
+  }
+}
+
+@media screen and (max-width:477px) {
+
+  .new-blu,
+  .new-grey {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:768px) {
+
+  .header-blog .logo-7.rfr {
+    height: 90px;
+  }
+
+  .header-blog .logo-7.das {
+    height: 90px;
+  }
+}
+
+header {
+  z-index: 1;
+}
+
+.ad {
+  z-index: 99;
 }

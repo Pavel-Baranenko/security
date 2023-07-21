@@ -6011,13 +6011,32 @@ header {
 ._fixed.shadow {
   position: fixed;
   background-color: #fff;
-  width: 100%;
-  max-width: 1200px;
-  padding-bottom: 10px;
-  padding-top: 10px;
 }
 
-.article__quote-author {
+header._fixed.shadow .container .header-ascii {
+  display: none;
+}
+
+header._fixed.shadow .container {
+  height: 55px;
+}
+
+header._fixed.shadow .container {
+  align-items: center;
+}
+
+header._fixed.shadow .container .header__block {
+  margin-bottom: 0;
+  align-items: center;
+}
+
+header._fixed.shadow .container .header {
+  margin-bottom: 0;
+
+}
+
+
+#article .container .article__body .article__quote-author {
   text-align: right;
 }
 
@@ -6267,4 +6286,8 @@ header {
     bottom: 5px;
     font-size: 7px;
   }
+}
+
+.black-text h4 {
+  color: #0B1823 !important;
 }

@@ -4335,6 +4335,8 @@ main {
   border-radius: 12px;
   background-blend-mode: multiply, normal, normal;
   box-shadow: 0px 0px 34px 0px rgba(0, 225, 255, 0.20), 0px 24px 220px 0px rgba(0, 225, 255, 0.20);
+  object-position: top;
+  object-fit: fill;
 }
 
 .new__img {
@@ -4727,10 +4729,7 @@ main {
     border-bottom: none;
   }
 
-  .gloapp__link {
-    top: auto;
-    bottom: -25px;
-  }
+
 
   .border-dest {
     padding: 9px 0 9px 10px;
@@ -5140,10 +5139,11 @@ header .container .header-menu-bar-b a svg {
     font-size: 90px;
     padding-left: 24px;
     padding-right: 24px;
+    text-align: center;
   }
 
   .false__subtitle {
-
+    text-align: center;
     padding-left: 24px;
     padding-right: 24px;
   }
@@ -5529,9 +5529,9 @@ header {
 }
 
 .tg-btn {
-  background-image: url(../../image/button-bg.svg);
+  /* background-image: url(../../image/button-bg.svg);
   background-position: center;
-  border: none;
+  border: none; */
   width: 100%;
   padding: 11px;
   color: #4AB0D1;
@@ -5544,6 +5544,23 @@ header {
   /* 86.667% */
   letter-spacing: -0.75px;
   cursor: pointer;
+
+  background-image: -webkit-repeating-radial-gradient(center center, #4AB0D1, #4AB0D1 1px, transparent 1px, transparent 100%);
+  background-image: -moz-repeating-radial-gradient(center center, #4AB0D1, #4AB0D1 1px, transparent 1px, transparent 100%);
+  background-image: -ms-repeating-radial-gradient(center center, #4AB0D1, #4AB0D1 1px, transparent 1px, transparent 100%);
+  background-image: repeating-radial-gradient(center center, #4AB0D1, #4AB0D1 1px, transparent 1px, transparent 100%);
+  -webkit-background-size: 3px 3px;
+  -moz-background-size: 3px 3px;
+  background-size: 2.7px 2.7px;
+  border: none;
+  border-radius: 2px;
+}
+
+.tg-btn span {
+
+  background: #DEF5FC;
+  padding: 0 5px;
+  border-radius: 1px;
 }
 
 .qt {
@@ -5608,7 +5625,7 @@ header {
 }
 
 .blogpage__title .article__title span {
-  line-height: 1;
+  line-height: 71%;
   height: 50px;
   display: inline-block;
   padding: 4px 1px 12px 4px;
@@ -5844,7 +5861,11 @@ header {
 }
 
 .formwrap {
-  margin-top: 136px;
+  margin-top: 0;
+}
+
+.btn.no-bg:hover {
+  background-color: transparent;
 }
 
 .modal .formwrap .btn_light {
@@ -5857,6 +5878,10 @@ header {
   line-height: 13px;
   /* 100% */
   letter-spacing: -0.65px;
+}
+
+.btn_line-dis:hover {
+  color: #00AEE5;
 }
 
 .modal .formwrap .btn_transparent {
@@ -6089,4 +6114,108 @@ header {
     object-fit: cover;
     max-width: 100%;
   }
+}
+
+.table__num-checkbox input:hover {
+  background: var(--divider-blue, rgba(0, 174, 229, 0.12));
+  cursor: pointer;
+}
+
+
+@media (min-width: 992px) {
+  .dn {
+    display: none;
+  }
+
+
+}
+
+@media (max-width: 992px) {
+  .d-flex {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 16px 0;
+  }
+}
+
+.file-bt {
+  position: relative;
+  cursor: pointer;
+}
+
+.file-bt input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: transparent !important;
+  font-size: 0 !important;
+  border: none !important;
+  font: normal;
+  overflow: visible !important;
+  color: transparent !important;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.file-bt input:active,
+.file-bt input:focus {
+  background-color: transparent !important;
+}
+
+.file-bt input:focus {
+  background-color: transparent !important;
+  outline: none !important;
+}
+
+.file-bt:hover {
+  opacity: 0.4;
+  transition: all 0.4s ease;
+}
+
+.new-grey:hover {
+  background-color: #00AEE5;
+  color: #FFF;
+  opacity: 1;
+}
+
+@media screen and (max-width:768px) {
+  .blog-avt {
+    display: block;
+  }
+
+  .blog-avt img {
+    height: auto;
+    width: auto;
+  }
+
+  .gloapp__link {
+    top: auto;
+    bottom: -25px;
+  }
+}
+
+.menu-navigation__item>a:last-of-type:hover {
+  background-color: #05ADE5;
+  color: #0A1824;
+  transition: all 0.3s ease;
+}
+
+@media (max-width:992px) {
+  .glo__item-link {
+    font-size: 29px;
+  }
+}
+
+.new-slick .article-feed-list {
+  flex-direction: row !important;
+}
+
+.bgy .main-news-list__item h4 {
+  pointer-events: none;
+}
+
+.overx {
+  width: auto;
 }

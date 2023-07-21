@@ -5136,13 +5136,13 @@ header .container .header-menu-bar-b a svg {
     font-size: 90px;
     padding-left: 24px;
     padding-right: 24px;
-    text-align: center;
+    margin-top: 84px;
   }
 
   .false__subtitle {
-    text-align: center;
     padding-left: 24px;
     padding-right: 24px;
+    margin-bottom: 84px;
   }
 }
 
@@ -6425,4 +6425,11 @@ header {
 
 .actionlist {
   flex-wrap: wrap;
+}
+
+@media (max-width: 992px) {
+  .mlg {
+    margin-left: 1px;
+    background: #49C7EE;
+  }
 }

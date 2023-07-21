@@ -4890,45 +4890,42 @@ main {
   letter-spacing: -0.5px;
 }
 
-.table__row::after {
+/* .table__row::after {
   display: block;
-  content: "+";
+  content: "";
   position: absolute;
   color: #0089B5;
   bottom: -11.6px;
+  background-image: url(../../image/line-plus.png);
   left: -3px;
-}
+  width: 700px;
+} */
 
-.table__row::before {
-  display: block;
-  content: "+";
-  position: absolute;
-  color: #0089B5;
-  bottom: -11.6px;
-  right: -3px;
-}
 
-.table::before {
+
+/* .table::before {
   display: block;
-  content: "+";
+  content: "";
   position: absolute;
   color: #0089B5;
   top: -12px;
+
   right: -3px;
-}
+} */
 
 .table {
   position: relative;
 }
 
-.table::after {
+/* .table::after {
   display: block;
   content: "+";
   position: absolute;
   color: #0089B5;
   top: -12px;
   left: -3px;
-}
+  background-image: url(../../image/line-plus.png);
+} */
 
 .table__num-checkbox {
   margin-top: 20px;
@@ -4953,7 +4950,7 @@ main {
   font-weight: 500;
   line-height: 13px;
   letter-spacing: -1.35px;
-  padding-top: 4px;
+  padding-top: 4.5px;
 }
 
 .table__num-checkbox span {

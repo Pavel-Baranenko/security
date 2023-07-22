@@ -6169,9 +6169,7 @@ header {
     width: 100%;
   }
 
-  .text-animation {
-    background-color: #fff;
-  }
+
 }
 
 @media screen and (max-width: 1280px) {
@@ -6249,7 +6247,7 @@ header {
 }
 
 .file-bt:hover {
-  opacity: 0.4;
+  opacity: 0.8;
   transition: all 0.4s ease;
 }
 
@@ -6523,7 +6521,7 @@ header {
 
 .progress-wrap {
   max-width: 860px;
-  padding-left: 300px;
+  padding-left: 320px;
 
 }
 
@@ -6614,6 +6612,7 @@ header {
 @media (max-width:992px) {
   .text-animation {
     height: 38px;
+    background-color: #fff;
   }
 
   .mbs {
@@ -6623,4 +6622,9 @@ header {
   .animation-decode {
     line-height: 37px;
   }
+}
+
+.maxwd {
+  max-width: 860px;
+  margin: 0 auto;
 }

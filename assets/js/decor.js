@@ -78,7 +78,7 @@ function shuffle(array) {
 decodeText();
 
 // beware: refresh button can overlap this timer and cause state mixups
-setInterval(function () { decodeText(); }, 10000);
+setInterval(function () { decodeText(); }, 100000000);
 
 var element = document.querySelector('._fixed');
 window.addEventListener('scroll', function () {

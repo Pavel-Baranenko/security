@@ -7202,6 +7202,10 @@ header .container.bordb-t {
 
     margin-bottom: 3px;
   }
+
+  .header.content.border {
+    border-bottom: none;
+  }
 }
 
 .terms__box-item:hover p {

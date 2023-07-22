@@ -7203,3 +7203,8 @@ header .container.bordb-t {
     margin-bottom: 3px;
   }
 }
+
+.terms__box-item:hover p {
+  color: #0089B5;
+  transition: all 0.3s ease;
+}

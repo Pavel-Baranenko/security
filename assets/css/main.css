@@ -4937,10 +4937,19 @@ main {
   background: var(--divider-blue, rgba(0, 174, 229, 0.30));
   width: 24px;
   height: 24px;
+  position: relative;
+}
+
+.table__num-checkbox input:checked::after {
+  display: none;
 }
 
 .table__num-checkbox input::after {
+  position: absolute;
   display: block;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
   content: "×";
   color: var(--text-active-blue, #00AEE5);
   text-align: center;
@@ -4948,9 +4957,9 @@ main {
   font-size: 27px;
   font-style: normal;
   font-weight: 500;
-  line-height: 13px;
-  letter-spacing: -1.35px;
-  padding-top: 4.5px;
+  /* line-height: 13px; */
+  /* letter-spacing: -1.35px; */
+  /* padding-top: 4.5px; */
 }
 
 .table__num-checkbox span {
@@ -6483,19 +6492,19 @@ header {
 
 .progress-wrap {
   max-width: 860px;
-  position: relative;
+  padding-left: 300px;
 
 }
 
 .progress-bar {
   display: none;
-  position: relative;
   /* right: 845px; */
   /* left: 341px; */
-  left: 0;
-  top: 7px;
+  position: relative;
+  top: 6px;
   height: 5px;
   width: 143px;
+
   background: #00AEE5;
 }
 
@@ -6512,6 +6521,7 @@ header {
 @media (max-width:992px) {
   .progress-wrap {
     left: 0;
+    display: none;
   }
 }
 
@@ -6525,4 +6535,15 @@ header {
 
 .mbf {
   margin-top: 0 !important;
+}
+
+.dert {
+  display: flex;
+  align-items: center;
+}
+
+.table__num-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0 12px;
 }

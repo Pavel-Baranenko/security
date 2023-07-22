@@ -3877,10 +3877,11 @@ main {
 }
 
 .gloapp__name span {
-  display: block;
+  display: inline;
   border-radius: 3px;
-  background: rgba(11, 24, 35, 0.1);
+  background: #B8D9E5;
   padding: 5px;
+  line-height: 1.1;
 }
 
 .gloapp__desc {

@@ -6443,9 +6443,18 @@ header {
     right: calc(100% - 143px);
   }
 
+
+}
+
+@media (max-width: 768px) {
+
   .blogpage__title .article__title span {
     height: 30px;
   }
+}
+
+.blogpage__title .article__title span {
+  margin-left: 6px;
 }
 
 .menu-navigation__submenu .menu-navigation__item:nth-child(2)>a {
@@ -6583,5 +6592,35 @@ header {
 @media screen and (min-width:1280px) {
   .quote-new::after {
     display: none;
+  }
+}
+
+.blogers__item.swiper-slide {
+
+  height: auto !important;
+}
+
+.article__code-item {
+  color: var(--text-code-on-white, #00A880);
+  font-family: Fira Code;
+}
+
+@media (max-width:1280px) {
+  .text-animation {
+    height: 38px;
+  }
+}
+
+@media (max-width:992px) {
+  .text-animation {
+    height: 38px;
+  }
+
+  .mbs {
+    width: 100%;
+  }
+
+  .animation-decode {
+    line-height: 37px;
   }
 }

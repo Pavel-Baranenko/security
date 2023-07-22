@@ -4863,17 +4863,17 @@ main {
 
 .table__row {
   display: flex;
-  border-bottom: 1px dashed #0089B5;
-  border-style: none none dashed;
-  border-width: 2px;
+  /* border-bottom: 1px dashed #0089B5; */
+  /* border-style: none none dashed; */
+  /* border-width: 2px; */
   position: relative;
   padding: 13px 0;
 }
 
-.table__row:first-child {
+/* .table__row:first-child {
   border-top: 1px dashed #0089B5;
   border-width: 2px;
-}
+} */
 
 .table__column:nth-child(1) {
   width: 58px;
@@ -4923,7 +4923,9 @@ main {
   width: 700px;
 } */
 
-
+.table__row .table__column:nth-child(3) {
+  padding-right: 12px;
+}
 
 /* .table::before {
   display: block;
@@ -6562,6 +6564,10 @@ header .container.bordb-t {
 
 ._fixed.shadow .content.new-fix .progress-wrap {
   padding-left: 328px;
+}
+
+._fixed.shadow .content.new-fix .progress-bar {
+  width: 147px;
 }
 
 ._fixed.shadow .content.new-fix::after {

@@ -6807,7 +6807,7 @@ header .container.bordb-t {
 
 @media (max-width: 992px) {
   header .container.bordb-t .header-ascii {
-    height: 80%;
+    height: 70px;
   }
 
   .header__label {

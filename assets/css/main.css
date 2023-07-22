@@ -6484,16 +6484,18 @@ header {
 .progress-wrap {
   max-width: 860px;
   position: relative;
+
 }
 
 .progress-bar {
   display: none;
   position: relative;
-  right: 845px;
-  left: 341px;
+  /* right: 845px; */
+  /* left: 341px; */
+  left: 0;
   top: 7px;
   height: 5px;
-  width: 0%;
+  width: 143px;
   background: #00AEE5;
 }
 
@@ -6502,13 +6504,13 @@ header {
 }
 
 @media (max-width:1280px) {
-  .progress-bar {
+  .progress-wrap {
     left: 317px;
   }
 }
 
 @media (max-width:992px) {
-  .progress-bar {
+  .progress-wrap {
     left: 0;
   }
 }

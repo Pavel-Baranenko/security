@@ -7062,3 +7062,13 @@ header .container.bordb-t {
 .swiper-wrapper.full-height .swiper-slide {
   height: auto;
 }
+
+@media (min-width:1280px) {
+  header .container {
+    height: 150px;
+  }
+
+  header .container .header-ascii__art {
+    height: 135px;
+  }
+}

@@ -3859,7 +3859,7 @@ main {
 
 .gloapp {
   background: #cceffa;
-  margin-bottom: 324px;
+  margin-bottom: 234px;
   position: relative;
 }
 
@@ -7160,17 +7160,37 @@ header .container.bordb-t {
 }
 
 .header-blog .logo-7 {
-  height: 180px;
+  height: 162px;
 }
 
 .header-blog .logo-7.rfr {
-  height: 180px;
+  height: 162px;
 }
 
 .header-blog .logo-7.das {
-  height: 180px;
+  height: 162px;
 }
 
 header .container.bordb-t {
   height: 168px;
+}
+
+.main-news-list__title:hover .white__text {
+  color: #0089B5 !important;
+  transition: all 0.3s ease;
+}
+
+
+@media (max-width:768px) {
+  .header-blog .logo-7 {
+    height: 58px;
+  }
+
+  .header-blog .logo-7.rfr {
+    height: 58px;
+  }
+
+  .header-blog .logo-7.das {
+    height: 58px;
+  }
 }

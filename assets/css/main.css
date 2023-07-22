@@ -7194,3 +7194,12 @@ header .container.bordb-t {
     height: 58px;
   }
 }
+
+@media screen and (max-width: 768px) {
+
+  .title__sub,
+  .title__sub-menu {
+
+    margin-bottom: 3px;
+  }
+}

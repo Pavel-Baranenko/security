@@ -7293,3 +7293,16 @@ header .container.bordb-t {
     top: 40px;
   }
 }
+
+@media (max-width: 1280px) {
+
+  .logo-1,
+  .logo-2,
+  .logo-3,
+  .logo-4,
+  .logo-5,
+  .logo-6,
+  .logo-8 {
+    width: auto !important;
+  }
+}

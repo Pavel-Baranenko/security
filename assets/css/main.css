@@ -7029,8 +7029,34 @@ header .container.bordb-t {
   border-radius: 1px 3px 3px 1px;
 }
 
+.blog-header .container {
+  border-bottom: none;
+}
+
+.blog-header .container .content {
+  border-bottom: 1px solid rgba(0, 174, 229, 0.3);
+}
+
 @media (max-width:992px) {
   #sidebar {
     max-width: none;
   }
+}
+
+@media (max-width:768px) {
+  .blog-header .container {
+    border-bottom: none;
+  }
+
+  header .container.bordb-t {
+    border-bottom: none;
+  }
+
+  .blog-header .container .content {
+    border-bottom: none;
+  }
+}
+
+.swiper-wrapper.full-height .swiper-slide {
+  height: auto;
 }

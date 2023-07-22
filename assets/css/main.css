@@ -4317,6 +4317,12 @@ main {
 
 .quote-new {
   position: relative;
+  overflow: hidden;
+}
+
+.new__text {
+
+  position: relative;
 }
 
 .quote-new-bg {
@@ -4328,6 +4334,22 @@ main {
   height: 100%;
 }
 
+.quote-new-el {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media (max-width:768px) {
+  .quote-new {
+    border-left: none;
+  }
+
+  .quote-new-el {
+    display: block;
+  }
+}
 
 .new__img img {
   width: 700px;
@@ -6546,4 +6568,20 @@ header {
   display: flex;
   align-items: center;
   gap: 0 12px;
+}
+
+.quote-new::after {
+  display: block;
+}
+
+@media screen and (max-width:992px) {
+  .quote-new::after {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1280px) {
+  .quote-new::after {
+    display: none;
+  }
 }

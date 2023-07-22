@@ -6726,6 +6726,15 @@ header .container.bordb-t {
   } */
 }
 
+.header__label {
+  z-index: -1;
+}
+
+.header-ascii {
+  position: relative;
+  z-index: 1;
+}
+
 .blog-avt {
   align-items: center;
 }
@@ -6744,15 +6753,27 @@ header .container.bordb-t {
   }
 }
 
+.header__label {
+  right: 40px;
+}
+
 @media (max-width: 1280px) {
   header .container.bordb-t {
     height: 160px;
+  }
+
+  .header__label {
+    right: 30px;
   }
 }
 
 @media (max-width: 1280px) {
   .mes {
     display: none;
+  }
+
+  .header__label {
+    top: 21px;
   }
 }
 
@@ -6761,12 +6782,21 @@ header .container.bordb-t {
     height: 80%;
   }
 
+  .header__label {
+    top: 27px;
+  }
+
 
 }
 
 @media (max-width: 768px) {
   header .container.bordb-t {
     height: 106px;
+  }
+
+  .header__label {
+    right: 17px;
+    top: 21px;
   }
 }
 

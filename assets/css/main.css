@@ -2301,7 +2301,7 @@ footer .container .footer-menu__item a {
   }
 
   #article .container .article__image {
-    border-radius: 12px;
+    /* border-radius: 12px; */
     margin: 0 0 1.25rem;
   }
 
@@ -3967,7 +3967,7 @@ main {
   }
 
   .actionlist {
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
   }
 
   .header-blog .logo-7 {
@@ -7156,4 +7156,21 @@ header .container.bordb-t {
 
 .article__image_blog img {
   border-radius: 0 !important;
+  margin-bottom: 10px;
+}
+
+.header-blog .logo-7 {
+  height: 180px;
+}
+
+.header-blog .logo-7.rfr {
+  height: 180px;
+}
+
+.header-blog .logo-7.das {
+  height: 180px;
+}
+
+header .container.bordb-t {
+  height: 168px;
 }

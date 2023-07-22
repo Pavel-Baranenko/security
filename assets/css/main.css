@@ -4391,6 +4391,7 @@ main {
   }
 
   .new__img img {
+
     height: 400px;
 
   }
@@ -4963,6 +4964,7 @@ main {
   width: 24px;
   height: 24px;
   position: relative;
+  margin: 0;
 }
 
 .table__num-checkbox input:checked::after {
@@ -6301,7 +6303,7 @@ header .container.bordb-t {
 
 @media (max-width:992px) {
   .glo__item-link {
-    font-size: 29px;
+    font-size: 30px;
   }
 }
 

@@ -6804,3 +6804,23 @@ header .container.bordb-t {
 .mb20 {
   margin-bottom: 20px;
 }
+
+.search__btn {
+  position: relative;
+  z-index: 10;
+}
+
+.search__btn:hover {
+  opacity: 0.8 !important;
+  cursor: pointer;
+}
+
+.mln {
+  margin-left: -3px;
+}
+
+@media (max-width:1280px) {
+  .side-none {
+    display: none;
+  }
+}

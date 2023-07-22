@@ -6849,6 +6849,25 @@ header .container.bordb-t {
   .side-none {
     display: none;
   }
+
+  .width-full {
+    width: 100% !important;
+  }
+
+  #main-news .container .main-news__main.width-full {
+    width: 100% !important;
+  }
+}
+
+@media (min-width:992px) {
+
+  .width-full {
+    width: 100% !important;
+  }
+
+  #main-news .container .main-news__main.width-full {
+    width: 100% !important;
+  }
 }
 
 @media (max-width:992px) {

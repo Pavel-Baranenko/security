@@ -6977,7 +6977,7 @@ header .container.bordb-t {
 
 #sidebar {
   max-width: 296px;
-  margin-top: 0 !important;
+  /* margin-top: 0 !important; */
   /* top: 134px; */
 }
 

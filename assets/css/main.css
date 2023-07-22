@@ -4126,7 +4126,7 @@ main {
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
-    line-height: 23px;
+    line-height: 1;
     margin-bottom: 8px;
   }
 

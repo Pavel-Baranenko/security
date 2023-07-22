@@ -6584,6 +6584,10 @@ header .container.bordb-t {
   .progress-wrap {
     left: 317px;
   }
+
+  .decode-text-small .text-animation {
+    background-color: #fff;
+  }
 }
 
 @media (max-width:992px) {

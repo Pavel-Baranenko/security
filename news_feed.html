@@ -155,7 +155,7 @@
                 <a href="#" target="_blank" title="Стань спикером на PHDAYS12"><img src="./image/banner/phdays12.jpg"
                     srcset="./image/banner/phdays12@2x.jpg 2x" loading="lazy" alt="PHDAYS12"></a>
               </div>
-              <div class="main-news-top slider">
+              <div class="main-news-top slider" id="sidebar">
                 <div class="main-news-top__title">
                   <h2><span>_Топ_за_неделю</span></h2>
                 </div>
@@ -287,7 +287,7 @@
                 </div>
               </div>
             </aside>
-            <div class="main-news__main ">
+            <div class="main-news__main " id="main_content">
               <div class="main-news__main themes-news ptn width-b">
                 <div class="title tet">
                   <h2><span>_ЛЕНТА_НОВОСТЕЙ</span></h2>
@@ -718,6 +718,15 @@
     });
 
   </script>
+  <script>
+    const greyBtn = document.querySelector(".news__archive-btn");
+    const arhive = document.querySelector(".arhive-box");
+
+    greyBtn.addEventListener('click', function () {
+      arhive.classList.toggle("active");
+    });
+  </script>
+  <!-- <script src="./assets/js/sidebar.js"></script> -->
 </body>
 
 </html>

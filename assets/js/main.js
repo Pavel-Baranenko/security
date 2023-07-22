@@ -232,11 +232,6 @@
 
 
 
-const greyBtn = document.querySelector(".news__archive-btn");
-const arhive = document.querySelector(".arhive-box");
 
-greyBtn.addEventListener('click', function () {
-    arhive.classList.toggle("active");
-});
 
 

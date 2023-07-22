@@ -144,7 +144,7 @@
     <main>
       <section id="article">
         <div class="top-block">
-          Telegram: Почему ваши данные всегда находятся в центре внимания хакеров?
+          <span>Telegram: Почему ваши данные всегда находятся в центре внимания хакеров?</span>
         </div>
         <div class="container">
 
@@ -155,7 +155,7 @@
                   title="Стань спикером на PHDAYS12"><img src="./image/banner/phdays12.jpg"
                     srcset="./image/banner/phdays12@2x.jpg 2x" loading="lazy" alt="PHDAYS12"></a></div>
               <div class="go" id="go"></div>
-              <div class="article-feed slider mbf">
+              <div class="article-feed slider mbf" id="sidebar">
                 <div class="article-feed__title">
                   <h2><span>_Лента</span></h2>
                 </div>
@@ -250,7 +250,7 @@
                 </div>
               </div>
             </aside>
-            <article class="article__main">
+            <article class="article__main" id="main_content">
               <div class="article__head article__head--small-image">
                 <div class="article__group">
                   <div class="article__title">
@@ -548,15 +548,7 @@
   <script defer src="./assets/js/decor.js"></script>
   <script defer src="./assets/js/main.js?v=4c15106"></script>
   <script src="./assets/js/progressbar.js"></script>
-  <!-- <script>
-    function scroll() {
-      const scrolling = document.body.scrollTop || document.documentElement.scrollTop;
-      console.log(scrolling);
-      document.getElementById("go").style.marginTop = (scrolling - 300) + 'px';
-    }
-
-    window.addEventListener('scroll', scroll);
-  </script> -->
+  <script src="./assets/js/sidebar.js"></script>
 </body>
 
 </html>

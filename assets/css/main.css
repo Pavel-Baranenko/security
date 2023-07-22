@@ -6561,7 +6561,7 @@ header .container.bordb-t {
   /* right: 845px; */
   /* left: 341px; */
   position: relative;
-  top: 6px;
+  top: 7px;
   height: 5px;
   width: 143px;
   opacity: 0;
@@ -7006,4 +7006,13 @@ header .container.bordb-t {
     padding-bottom: 10px;
     border-bottom: 1px solid rgba(0, 174, 229, 0.30);
   }
+}
+
+.logo-1,
+.logo-2,
+.logo-3,
+.logo-4,
+.logo-5,
+.logo-6 {
+  width: 721px !important;
 }

@@ -6881,9 +6881,9 @@ header .container.bordb-t {
 
   }
 
-  .filterlist-mob {
+  /* .filterlist-mob {
     display: flex;
-  }
+  } */
 }
 
 .border-let {
@@ -7183,15 +7183,15 @@ header .container.bordb-t {
 
 @media (max-width:768px) {
   .header-blog .logo-7 {
-    height: 58px;
+    height: 70px;
   }
 
   .header-blog .logo-7.rfr {
-    height: 58px;
+    height: 70px;
   }
 
   .header-blog .logo-7.das {
-    height: 58px;
+    height: 70px;
   }
 }
 

@@ -6183,6 +6183,10 @@ header {
   .quote-new {
     font-size: 16px;
   }
+
+  .mbh {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -6191,6 +6195,22 @@ header {
     object-fit: cover;
     max-width: 100%;
   }
+
+  .mbh {
+    width: 10px;
+  }
+}
+
+.bordb-t {
+  border-bottom: 1px solid var(--divider-blue, rgba(0, 174, 229, 0.30));
+  padding-bottom: 13px !important;
+  height: 148px !important;
+}
+
+
+
+.pb-des {
+  padding-bottom: 13px !important;
 }
 
 .table__num-checkbox input:hover {

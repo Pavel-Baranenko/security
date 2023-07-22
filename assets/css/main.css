@@ -4126,7 +4126,7 @@ main {
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
-    line-height: 28px;
+    line-height: 23px;
     margin-bottom: 8px;
   }
 
@@ -6647,4 +6647,38 @@ header {
 .maxwd {
   max-width: 860px;
   margin: 0 auto;
+}
+
+@media (max-width:768px) {
+  .text-animation {
+    height: 38px;
+    background-color: #fff;
+  }
+
+  .mbs {
+    width: 100%;
+  }
+
+  .animation-decode {
+    line-height: 37px;
+  }
+
+  .title__sub-drop {
+    left: -115px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title__sub-drop {
+    right: -50%;
+    left: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .title__sub-drop {
+    right: 0%;
+    left: auto;
+    width: 300px;
+  }
 }

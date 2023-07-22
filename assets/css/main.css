@@ -7068,7 +7068,60 @@ header .container.bordb-t {
     height: 150px;
   }
 
+  header .container .header-ascii {
+    position: relative;
+    top: 28px;
+  }
+
   header .container .header-ascii__art {
     height: 135px;
+
+  }
+
+  header .container .header-ascii__lead {
+    position: relative;
+    bottom: 25px;
+  }
+}
+
+@media (max-width:768px) {
+  #main-blogs .container .main-blogs:before {
+    background: #fff;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 59px;
+    width: 50%;
+  }
+}
+
+@media (max-width:600px) {
+  #main-blogs .container .main-blogs:before {
+    background: #fff;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 59px;
+    width: 66%;
+  }
+}
+
+@media (max-width:455px) {
+  #main-blogs .container .main-blogs:before {
+    background: #fff;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 59px;
+    width: 78%;
   }
 }

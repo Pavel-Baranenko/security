@@ -5542,6 +5542,7 @@ header {
     display: inline;
     background-color: #FFF;
     box-shadow: -10px 0 0 #FFF, 10px 0 0 #FFF;
+    line-height: 35px;
   }
 
   .decode-text {
@@ -6201,10 +6202,10 @@ header {
   }
 }
 
-.bordb-t {
+header .container.bordb-t {
   border-bottom: 1px solid var(--divider-blue, rgba(0, 174, 229, 0.30));
   padding-bottom: 13px !important;
-  height: 148px !important;
+  height: 148px;
 }
 
 
@@ -6278,10 +6279,6 @@ header {
 }
 
 @media screen and (max-width:768px) {
-  .blog-avt {
-    display: block;
-  }
-
   .blog-avt img {
     height: auto;
     width: auto;
@@ -6317,9 +6314,6 @@ header {
   width: auto;
 }
 
-.width-a {
-  width: auto !important;
-}
 
 .arhive-box__midle {
   flex-wrap: nowrap;
@@ -6328,6 +6322,15 @@ header {
 @media (max-width:1280px) {
   .arhive-box__midle {
     flex-wrap: wrap;
+  }
+
+  .width-a {
+    width: auto !important;
+  }
+
+  .width-b {
+    width: 100% !important;
+    max-width: 633px;
   }
 }
 
@@ -6681,4 +6684,93 @@ header {
     left: auto;
     width: 300px;
   }
+}
+
+.qauhtor,
+.article__quote-author {
+  margin-left: auto;
+}
+
+.bloger-head {
+  display: none;
+}
+
+@media (max-width:992px) {
+  .bloger-head {
+    display: block;
+    color: var(--text-secondary-on-white, rgba(11, 24, 35, 0.50));
+
+    /* caption */
+    font-family: Fira Code;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 18px;
+    letter-spacing: -0.3px;
+  }
+}
+
+@media (max-width:768px) {
+  .blog-avt img {
+    width: 52px;
+    height: 52px;
+  }
+
+  /* .blog-avt {
+    justify-content: normal;
+
+  } */
+
+  /* .blog-avt img {
+    margin-right: auto;
+  } */
+}
+
+.blog-avt {
+  align-items: center;
+}
+
+.btn_line-dis:hover {
+  background-color: transparent;
+}
+
+.mar-none {
+  margin-bottom: 3px;
+}
+
+@media (max-width: 768px) {
+  .filterlist__line.rus {
+    display: none;
+  }
+}
+
+@media (max-width: 1280px) {
+  header .container.bordb-t {
+    height: 160px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .mes {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  header .container.bordb-t .header-ascii {
+    height: 80%;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  header .container.bordb-t {
+    height: 106px;
+  }
+}
+
+
+.mb20 {
+  margin-bottom: 20px;
 }

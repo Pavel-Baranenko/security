@@ -4,7 +4,11 @@ function progressBar() {
   let scrolled = scroll / height * 100;
   // let scroolHeight = 14.5;
   // document.getElementById('progressBar').style.width = (scroolHeight - (scrolled * 10)) + '%';
+  // for (i = 0; i < 37; i++) {
   document.getElementById('progressBar').style.marginLeft = (scrolled) + '%';
+
+
+  // document.getElementById('progress-wrap').style.paddingLeft = (scrolled) + '%';
 }
 window.addEventListener('scroll', progressBar);
 

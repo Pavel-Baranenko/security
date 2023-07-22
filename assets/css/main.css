@@ -6523,7 +6523,7 @@ header .container.bordb-t {
 
 @media (max-width: 992px) {
   .mlg {
-    margin-left: 1px;
+    margin-left: 0px;
     background: #49C7EE;
   }
 }
@@ -6837,12 +6837,28 @@ header .container.bordb-t {
 
 .mln {
   margin-left: -3px;
+  border-radius: 1px;
 }
 
 @media (max-width:1280px) {
   .side-none {
     display: none;
   }
+}
+
+@media (max-width:992px) {
+  .mln {
+    border-radius: 1px 3px 1px 1px;
+
+  }
+
+  .filterlist-mob {
+    display: flex;
+  }
+}
+
+.border-let {
+  border-radius: 1px 3px 3px 1px;
 }
 
 .main-news-list__item:hover {

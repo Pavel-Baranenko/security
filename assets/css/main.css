@@ -7303,6 +7303,50 @@ header .container.bordb-t {
   .logo-5,
   .logo-6,
   .logo-8 {
-    width: auto !important;
+    width: 518px !important;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 768px) {
+
+  header .container.bordb-t {
+    height: 90px;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .logo-1,
+  .logo-2,
+  .logo-3,
+  .logo-4,
+  .logo-5,
+  .logo-6,
+  .logo-8 {
+    width: 425px !important;
+    height: auto !important;
+  }
+
+  .header__label {
+    top: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .logo-1,
+  .logo-2,
+  .logo-3,
+  .logo-4,
+  .logo-5,
+  .logo-6,
+  .logo-8 {
+    width: 215px !important;
+    height: auto !important;
+  }
+
+  .header__label {
+    top: 25px;
   }
 }

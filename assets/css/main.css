@@ -2843,7 +2843,7 @@ footer .container .footer-menu__item a {
 
   header .container .header-ascii__art img.logo-7 {
     height: 87px;
-    width: 812px;
+    width: 735px;
   }
 
   header .container .header-ascii__art img.logo-8 {
@@ -7081,6 +7081,32 @@ header .container.bordb-t {
     top: 28px;
   }
 
+  header .container .header-ascii .logo-2 {
+    position: relative;
+    top: -23px;
+  }
+
+  header .container .header-ascii .logo-3 {
+    position: relative;
+    top: -23px;
+  }
+
+  header .container .header-ascii .logo-6 {
+    position: relative;
+    top: -23px;
+  }
+
+  header .container .header-ascii .logo-1 {
+    position: relative;
+    top: -23px;
+  }
+
+  header .container .header-ascii .logo-7 {
+    width: 650px;
+    top: -15px;
+    position: relative;
+  }
+
   header .container .header-ascii__art {
     height: 135px;
 
@@ -7089,6 +7115,10 @@ header .container.bordb-t {
   header .container .header-ascii__lead {
     position: relative;
     bottom: 25px;
+  }
+
+  .header__label {
+    top: 40px;
   }
 }
 
@@ -7211,4 +7241,55 @@ header .container.bordb-t {
 .terms__box-item:hover p {
   color: #0089B5;
   transition: all 0.3s ease;
+}
+
+@media (min-width:1280px) {
+  header .container {
+    height: 150px;
+  }
+
+  header .container .header-ascii {
+    position: relative;
+    top: 28px;
+  }
+
+  header .container .header-ascii .logo-2 {
+    position: relative;
+    top: -23px;
+  }
+
+  header .container .header-ascii .logo-3 {
+    position: relative;
+    top: -23px;
+  }
+
+  header .container .header-ascii .logo-6 {
+    position: relative;
+    top: -23px;
+  }
+
+  header .container .header-ascii .logo-1 {
+    position: relative;
+    top: -23px;
+  }
+
+  header .container .header-ascii .logo-7 {
+    width: 650px;
+    top: -15px;
+    position: relative;
+  }
+
+  header .container .header-ascii__art {
+    height: 135px;
+
+  }
+
+  header .container .header-ascii__lead {
+    position: relative;
+    bottom: 25px;
+  }
+
+  .header__label {
+    top: 40px;
+  }
 }

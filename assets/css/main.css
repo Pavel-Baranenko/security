@@ -3662,6 +3662,8 @@ main {
   margin: 0 auto;
 }
 
+
+
 .title__sub {
   display: inline-flex;
   color: #FDFFFF;
@@ -6979,6 +6981,7 @@ header .container.bordb-t {
   max-width: 296px;
   /* margin-top: 0 !important; */
   /* top: 134px; */
+  padding-bottom: 150px;
 }
 
 #main_content {
@@ -7015,4 +7018,13 @@ header .container.bordb-t {
 .logo-5,
 .logo-6 {
   width: 721px !important;
+}
+
+.border-rad-none {
+  border-radius: 1px;
+  background: #25BBEA;
+}
+
+.mlg {
+  border-radius: 1px 3px 3px 1px;
 }

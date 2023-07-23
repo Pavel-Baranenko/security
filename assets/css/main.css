@@ -7578,3 +7578,9 @@ header .container.bordb-t {
     border-radius: 3px;
   }
 }
+
+@media (max-width:1280px) {
+  .container.borber-n .content {
+    padding-bottom: 15px;
+  }
+}

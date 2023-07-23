@@ -7584,3 +7584,7 @@ header .container.bordb-t {
     padding-bottom: 15px;
   }
 }
+
+.article__descr-text {
+  padding-top: 8px;
+}

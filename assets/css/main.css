@@ -7445,4 +7445,50 @@ header .container.bordb-t {
   .container-fluid.ppd {
     padding: 0;
   }
+
+  .item-article-content .blog__name {
+    font-size: 17px;
+  }
+
+  .item-article-img img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .themes__top-title span {
+    width: 30px;
+    height: 10px;
+  }
+
+  .header-dest .logo-1 {
+    width: 100% !important;
+  }
+
+  .header-dest .logo-2 {
+    width: 100% !important;
+  }
+
+  .header-dest .logo-3 {
+    width: 100% !important;
+  }
+
+  .header-dest .logo-4 {
+    width: 100% !important;
+  }
+
+  .header-dest .logo-5 {
+    width: 100% !important;
+  }
+
+  .header-dest .logo-6 {
+    width: 100% !important;
+  }
+
+  .header-dest .logo-8 {
+    width: 100% !important;
+  }
+}
+
+.title__sub-wrap>* {
+  cursor: pointer;
 }

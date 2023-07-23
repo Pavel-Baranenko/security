@@ -7545,3 +7545,36 @@ header .container.bordb-t {
 .main-news-list__item:hover .ard {
   color: #0B1823 !important;
 }
+
+.themes__top-title-mob {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .themes__top-title {
+    display: none;
+  }
+
+  .themes__top-title-mob {
+    display: inline;
+    color: #FFF;
+    text-align: center;
+    background-color: #0B1823;
+    border-radius: 3px;
+
+
+    font-family: Fira Code;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 50px;
+    /* 100% */
+    letter-spacing: -2.5px;
+
+  }
+
+  .themes__top-title-mob span {
+    padding: 0 7px;
+    border-radius: 3px;
+  }
+}

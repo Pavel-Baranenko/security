@@ -7492,3 +7492,38 @@ header .container.bordb-t {
 .title__sub-wrap>* {
   cursor: pointer;
 }
+
+@media (min-width: 1280px) {
+  .header-dest {
+    margin-top: -18px;
+  }
+
+
+  .header-dest .logo-1 {
+    height: 135px !important;
+  }
+
+  .header-dest .logo-2 {
+    height: 135px !important;
+  }
+
+  .header-dest .logo-3 {
+    height: 135px !important;
+  }
+
+  .header-dest .logo-4 {
+    height: 135px !important;
+  }
+
+  .header-dest .logo-5 {
+    height: 135px !important;
+  }
+
+  .header-dest .logo-6 {
+    height: 135px !important;
+  }
+
+  .header-dest .logo-8 {
+    height: 135px !important;
+  }
+}

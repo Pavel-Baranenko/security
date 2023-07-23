@@ -7526,4 +7526,8 @@ header .container.bordb-t {
   .header-dest .logo-8 {
     height: 135px !important;
   }
+
+  .all-art__header {
+    margin-bottom: 20px;
+  }
 }

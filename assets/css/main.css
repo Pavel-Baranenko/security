@@ -7541,3 +7541,7 @@ header .container.bordb-t {
   color: #0089B5 !important;
   transition: all 0.3s ease;
 }
+
+.main-news-list__item:hover .ard {
+  color: #0B1823 !important;
+}

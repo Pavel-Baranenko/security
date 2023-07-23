@@ -7430,3 +7430,11 @@ header .container.bordb-t {
 .gloapp__name span {
   line-height: 130%;
 }
+
+.new-bord {
+  border-radius: 3px 3px 3px 3px;
+}
+
+.border-circle {
+  border-radius: 1px 3px 3px 1px;
+}

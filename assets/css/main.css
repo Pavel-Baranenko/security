@@ -5871,7 +5871,7 @@ header {
 
 .new-blu:hover,
 .new-grey:hover {
-  opacity: 0.4000000059604645;
+  opacity: 0.8000000059604645;
 }
 
 .new-grey {
@@ -7388,4 +7388,36 @@ header .container.bordb-t {
     top: 22px;
     width: 40%;
   }
+}
+
+/* .actionlist {
+  align-items: a;
+} */
+@media (max-width:768px) {
+  .new__cta img {
+    display: none;
+  }
+
+  .new-cta-btn {
+    width: 100%;
+    margin: 0;
+    font-size: 15px;
+    padding: 14.5px;
+  }
+
+  .new__cta {
+    padding: 0;
+  }
+}
+
+.item-article-content .blog__name {
+  padding-bottom: 8px;
+}
+
+.item-article:hover .blog__name {
+  color: #0089B5;
+}
+
+.main-news-list__item:hover h4 {
+  color: #0089B5;
 }

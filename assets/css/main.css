@@ -7421,3 +7421,12 @@ header .container.bordb-t {
 .main-news-list__item:hover h4 {
   color: #0089B5;
 }
+
+.container-fluid.pad-none {
+  padding: 0;
+  margin: 0;
+}
+
+.gloapp__name span {
+  line-height: 130%;
+}

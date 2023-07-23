@@ -7531,3 +7531,13 @@ header .container.bordb-t {
     margin-bottom: 20px;
   }
 }
+
+.main-news-list__details:hover p {
+  color: #0089B5 !important;
+  transition: all 0.3s ease;
+}
+
+.item-article:hover p {
+  color: #0089B5 !important;
+  transition: all 0.3s ease;
+}
